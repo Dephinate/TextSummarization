@@ -1,3 +1,10 @@
+"""
+Process:
+1) Create a List of what files you want to create
+2) Create directories first
+3) Create files after step 2. While creating check if the file is empty to avoid recreating of files
+"""
+
 # Import Libraries
 import os
 from pathlib import Path
@@ -43,6 +50,7 @@ for filepath in list_of_files:
     filepath = Path(filepath) # use Path to make path platform independent( forward slash in windows and back slash in ubuntu)
     filedir,filename = os.path.split(filepath)
 
+    # First create directory and then create file
     if filedir != "":
         os.makedirs(filedir, exist_ok = True)
         logging.info(f"Creating directory {filedir} for the file {filename}")

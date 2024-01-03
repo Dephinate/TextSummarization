@@ -1,3 +1,13 @@
+Metadata-Version: 2.1
+Name: TextSummarizer
+Version: 0.0.0
+Summary: A small python package for NLP application
+Home-page: https://github.com/Palpendiculal/KehnaKyaChahteHo
+Author: Palpendiculal
+Author-email: varuns.india@gmail.com
+Project-URL: Bug Tracker, https://github.com/Palpendiculal/KehnaKyaChahteHo/issues
+
+ # KehnaKyaChahteHo
 Text Summarizer  
 1) Template creation
 Use python to create the folder structure and directories. 
