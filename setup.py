@@ -5,7 +5,7 @@ with open("README.md","r",encoding="utf-8") as f:
 
 __version__ = "0.0.0"
 
-REPO_NAME = "KehnaKyaChahteHo" # Github repo name
+REPO_NAME = "TextSummarization" # Github repo name
 SRC_REPO = "TextSummarizer" # Source code directory in local
 AUTHOR_NAME = "Palpendiculal" # Github name
 AUTHOR_EMAIL = "varuns.india@gmail.com" # Github email
@@ -21,6 +21,8 @@ setuptools.setup(
     url=f"https://github.com/{AUTHOR_NAME}/{REPO_NAME}",
     project_urls = {
     "Bug Tracker":f"https://github.com/{AUTHOR_NAME}/{REPO_NAME}/issues",
-    }
+    },
+    package_dir = {"":"src"},
+    packages = setuptools.find_packages(where="src")
 
 )

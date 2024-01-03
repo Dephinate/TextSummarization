@@ -10,3 +10,7 @@ Python code for template creation: template.py
 6) Prediciton Pipeline
 7) User App creation
 8) Final CI/CD Deployment on AWS
+
+
+Step 1) Create template file. See comments in template.py for more information
+Step 2) Create Virtual env. Set requirements.txt. For pytorch please do it separately in order to avoid version issues. I am using pytorch 2.1.2 with cuda 11.4 on my system

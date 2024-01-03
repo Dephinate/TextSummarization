@@ -22,7 +22,8 @@ project_name = "TextSummarizer"
 # Declare a list of driectrories and files
 
 list_of_files = [
-    ".github/workflows/.gitkeep", # .github is for CI/CD deployment, .gitkeep is a hidden file included as we cannot upload an empty folder
+    ".github/workflows/.gitkeep", # .github is for CI/CD deployment, .gitkeep is a hidden file included as we cannot upload an empty folder. Whenever we will do a commit
+                                  # it will automatically take it from github and do the deployment over to the cloud
     f"src/{project_name}/__init__.py", # this constructor file is create a local package so we can do something like- from TextSummarizer import something
     f"src/{project_name}/components/__init__.py",
     f"src/{project_name}/utils/__init__.py",
