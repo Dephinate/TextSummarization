@@ -1,1 +1,121 @@
 [2024-01-04 12:58:19,728,INFO,main,Hello World]
+[2024-01-10 17:33:53,760,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-10 17:33:53,762,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-10 17:33:53,763,INFO,common,created directory at: artifacts]
+[2024-01-10 17:33:53,763,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-10 17:33:53,764,INFO,2427399911,File already exits of size: ~ 133 KB]
+[2024-01-10 17:37:04,432,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-10 17:37:04,433,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-10 17:37:04,434,INFO,common,created directory at: artifacts]
+[2024-01-10 17:37:20,674,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-10 17:37:20,675,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-10 17:37:20,676,INFO,common,created directory at: artifacts]
+[2024-01-10 17:37:20,676,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-10 17:39:39,373,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-10 17:39:39,374,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-10 17:39:39,375,INFO,common,created directory at: artifacts]
+[2024-01-10 17:39:39,375,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-10 17:39:53,390,INFO,2427399911,File already exits of size: ~ 133 KB]
+[2024-01-10 17:39:58,327,INFO,2427399911,File already exits of size: ~ 133 KB]
+[2024-01-10 17:40:12,994,INFO,2427399911,artifacts/data_ingestion/data.zip download! with the following info: 
+Server: GitHub.com
+Date: Thu, 11 Jan 2024 00:40:12 GMT
+Content-Type: text/html; charset=utf-8
+Vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Encoding, Accept, X-Requested-With
+ETag: W/"3bf685dc4c7bd4aa41384006c0758b29"
+Cache-Control: max-age=0, private, must-revalidate
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer-when-downgrade
+Content-Security-Policy: default-src 'none'; base-uri 'self'; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events api.githubcopilot.com objects-origin.githubusercontent.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ productionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.net/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.windows.net/ github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com support.github.com; img-src 'self' data: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/
+Set-Cookie: _gh_sess=8JH42vxCr9NQvIV1Vt5Y9qYwNvDVX6z3trmF59XFwyAUa9mslhMn8z6eCwXq4hMswxWKNAuoAwIq%2FiO6JnX%2F4hAwq20qI%2FYWgpKkT%2FngPFluArnuSRiCiYzqO1broMpZTyEIDUCIislupGvQYyRTUAqVaXtKnJNgsIhEuMJw4uT9Z9lMZtkTYAaOR0HCB9DgyccffxAlq9H8DNhGqd2xMgW8huiY%2F7VAIg4Tz5RDSgXpVryGJW9pwuqrbaQFUWdLdhrZDtK8UqKrD1usM7Mnrw%3D%3D--%2FvVnfEm0mbTVHQEF--HSI2G%2FW22QFatbvCtaBhXg%3D%3D; Path=/; HttpOnly; Secure; SameSite=Lax
+Set-Cookie: _octo=GH1.1.611550845.1704933612; Path=/; Domain=github.com; Expires=Sat, 11 Jan 2025 00:40:12 GMT; Secure; SameSite=Lax
+Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Sat, 11 Jan 2025 00:40:12 GMT; HttpOnly; Secure; SameSite=Lax
+Accept-Ranges: bytes
+Transfer-Encoding: chunked
+X-GitHub-Request-Id: 8AA2:0F64:A5A78C:ECFD95:659F38EC
+connection: close
+
+]
+[2024-01-10 17:41:04,964,INFO,2427399911,File already exits of size: ~ 133 KB]
+[2024-01-10 17:41:36,121,INFO,2427399911,File already exits of size: ~ 133 KB]
+[2024-01-10 17:41:58,779,INFO,2427399911,File already exits of size: ~ 133 KB]
+[2024-01-10 17:42:47,238,INFO,2427399911,File already exits of size: ~ 133 KB]
+[2024-01-10 18:04:40,301,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-10 18:04:40,310,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-10 18:04:40,310,INFO,common,created directory at: artifacts]
+[2024-01-10 18:04:40,311,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-10 18:04:58,064,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-10 18:04:58,065,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-10 18:04:58,066,INFO,common,created directory at: artifacts]
+[2024-01-10 18:04:58,067,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-10 18:04:58,773,INFO,2427399911,artifacts/data_ingestion/data.zip download! with the following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: BFD4:7D21:20563E:295684:659F3E73
+Accept-Ranges: bytes
+Date: Thu, 11 Jan 2024 01:04:58 GMT
+Via: 1.1 varnish
+X-Served-By: cache-lax-kwhp1940034-LAX
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1704935098.195576,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: bd800cd7527fac978c93003d46d43d3112bee77a
+Expires: Thu, 11 Jan 2024 01:09:58 GMT
+Source-Age: 70
+
+]
+[2024-01-10 18:54:34,494,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-10 18:54:34,494,ERROR,main,DataIngestionTrainingPipeline.main() missing 1 required positional argument: 'self']
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 9, in <module>
+    data_ingestion.main()
+TypeError: DataIngestionTrainingPipeline.main() missing 1 required positional argument: 'self'
+[2024-01-10 18:56:56,453,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-10 18:56:56,453,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-10 18:56:56,454,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-10 18:56:56,454,INFO,common,created directory at: artifacts]
+[2024-01-10 18:56:56,454,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-10 18:56:59,291,INFO,data_ingestion,artifacts/data_ingestion/data.zip download! with the following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: D402:7676:3DBFB2:4EFC03:659F4AE7
+Accept-Ranges: bytes
+Date: Thu, 11 Jan 2024 01:56:57 GMT
+Via: 1.1 varnish
+X-Served-By: cache-lax-kwhp1940114-LAX
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1704938217.697206,VS0,VE481
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: a7a17cdf7ef73b4b6f458740e3114a92a8247205
+Expires: Thu, 11 Jan 2024 02:01:57 GMT
+Source-Age: 0
+
+]
+[2024-01-10 18:56:59,373,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
