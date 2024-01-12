@@ -119,3 +119,448 @@ Source-Age: 0
 [2024-01-10 18:56:59,373,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
 
 x==========]
+[2024-01-11 14:28:32,995,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-11 14:28:32,996,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-11 14:28:32,997,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-11 14:28:32,997,INFO,common,created directory at: artifacts]
+[2024-01-11 14:28:32,997,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-11 14:28:37,590,INFO,data_ingestion,artifacts/data_ingestion/data.zip download! with the following info: 
+Connection: close
+Content-Length: 23627009
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "2e7409b328d118a1d37018be788babf8bf9640386387da766ac100e96efa3b93"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 828E:40F9:70AEE5:8F8407:65A05D80
+Accept-Ranges: bytes
+Date: Thu, 11 Jan 2024 21:28:34 GMT
+Via: 1.1 varnish
+X-Served-By: cache-lax-kwhp1940092-LAX
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1705008513.210295,VS0,VE1291
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 675a78c8d1c324d91a0a381f3636212b85b2244d
+Expires: Thu, 11 Jan 2024 21:33:34 GMT
+Source-Age: 1
+
+]
+[2024-01-11 14:28:37,597,ERROR,main,]
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 9, in <module>
+    data_ingestion.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_01_data_ingestion.py", line 14, in main
+    data_ingestion.extract_zip_file()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_ingestion.py", line 33, in extract_zip_file
+    zip_ref.extractall(unzip_path)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/zipfile.py", line 1681, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/zipfile.py", line 1736, in _extract_member
+    shutil.copyfileobj(source, target)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/shutil.py", line 197, in copyfileobj
+    buf = fsrc_read(length)
+          ^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/zipfile.py", line 955, in read
+    data = self._read1(n)
+           ^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/zipfile.py", line 1023, in _read1
+    data += self._read2(n - len(data))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/zipfile.py", line 1058, in _read2
+    raise EOFError
+EOFError
+[2024-01-11 14:31:22,293,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-11 14:31:22,294,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-11 14:31:22,294,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-11 14:31:22,294,INFO,common,created directory at: artifacts]
+[2024-01-11 14:31:22,294,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-11 14:31:22,294,INFO,data_ingestion,File already exits of size: ~ 0 KB]
+[2024-01-11 14:31:22,295,ERROR,main,File is not a zip file]
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 9, in <module>
+    data_ingestion.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_01_data_ingestion.py", line 14, in main
+    data_ingestion.extract_zip_file()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_ingestion.py", line 32, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-01-11 14:33:13,455,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-11 14:33:13,457,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-11 14:33:13,464,INFO,common,created directory at: artifacts]
+[2024-01-11 14:33:13,466,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-11 14:33:20,632,INFO,2427399911,artifacts/data_ingestion/data.zip download! with the following info: 
+Connection: close
+Content-Length: 23627009
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "2e7409b328d118a1d37018be788babf8bf9640386387da766ac100e96efa3b93"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 828E:40F9:70AEE5:8F8407:65A05D80
+Accept-Ranges: bytes
+Date: Thu, 11 Jan 2024 21:33:18 GMT
+Via: 1.1 varnish
+X-Served-By: cache-lax-kwhp1940084-LAX
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1705008799.735607,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: f51fb7ed4d0fe88105081c0beb19784176de1418
+Expires: Thu, 11 Jan 2024 21:38:18 GMT
+Source-Age: 285
+
+]
+[2024-01-11 14:37:41,145,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-11 14:37:41,147,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-11 14:37:41,147,INFO,common,created directory at: artifacts]
+[2024-01-11 14:37:41,147,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-11 14:37:41,148,INFO,2427399911,File already exits of size: ~ 0 KB]
+[2024-01-11 14:38:26,116,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-11 14:38:26,117,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-11 14:38:26,117,INFO,common,created directory at: artifacts]
+[2024-01-11 14:38:26,118,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-11 14:38:26,118,INFO,2427399911,File already exits of size: ~ 0 KB]
+[2024-01-11 14:38:46,880,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-11 14:38:46,881,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-11 14:38:46,882,INFO,common,created directory at: artifacts]
+[2024-01-11 14:38:46,883,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-11 14:38:49,723,INFO,2427399911,artifacts/data_ingestion/data.zip download! with the following info: 
+Connection: close
+Content-Length: 23627009
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "2e7409b328d118a1d37018be788babf8bf9640386387da766ac100e96efa3b93"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 828E:40F9:70AEE5:8F8407:65A05D80
+Accept-Ranges: bytes
+Date: Thu, 11 Jan 2024 21:38:47 GMT
+Via: 1.1 varnish
+X-Served-By: cache-lax-kwhp1940046-LAX
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1705009127.035313,VS0,VE152
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: b00477841ead1e6e51f39d3e6a7a1a72f04af641
+Expires: Thu, 11 Jan 2024 21:43:47 GMT
+Source-Age: 0
+
+]
+[2024-01-11 14:39:57,511,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-11 14:39:57,513,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-11 14:39:57,513,INFO,common,created directory at: artifacts]
+[2024-01-11 14:39:57,514,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-11 14:40:00,266,INFO,2427399911,artifacts/data_ingestion/data.zip download! with the following info: 
+Connection: close
+Content-Length: 23627009
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "2e7409b328d118a1d37018be788babf8bf9640386387da766ac100e96efa3b93"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 828E:40F9:70AEE5:8F8407:65A05D80
+Accept-Ranges: bytes
+Date: Thu, 11 Jan 2024 21:39:57 GMT
+Via: 1.1 varnish
+X-Served-By: cache-lax-kwhp1940091-LAX
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1705009198.621109,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: d8209d5c24aef831ce7490203a92c12482f31972
+Expires: Thu, 11 Jan 2024 21:44:57 GMT
+Source-Age: 70
+
+]
+[2024-01-11 15:03:41,074,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-11 15:03:41,075,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-11 15:03:41,076,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-11 15:03:41,076,INFO,common,created directory at: artifacts]
+[2024-01-11 15:03:41,076,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-11 15:03:43,772,INFO,data_ingestion,artifacts/data_ingestion/data.zip download! with the following info: 
+Connection: close
+Content-Length: 23627009
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "2e7409b328d118a1d37018be788babf8bf9640386387da766ac100e96efa3b93"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 828E:40F9:70AEE5:8F8407:65A05D80
+Accept-Ranges: bytes
+Date: Thu, 11 Jan 2024 22:03:41 GMT
+Via: 1.1 varnish
+X-Served-By: cache-lax-kwhp1940097-LAX
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1705010621.285189,VS0,VE211
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: c3981a9565683116587b035a64841eb49c3cca05
+Expires: Thu, 11 Jan 2024 22:08:41 GMT
+Source-Age: 0
+
+]
+[2024-01-11 15:03:43,780,ERROR,main,]
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 9, in <module>
+    data_ingestion.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_01_data_ingestion.py", line 14, in main
+    data_ingestion.extract_zip_file()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_ingestion.py", line 33, in extract_zip_file
+    zip_ref.extractall(unzip_path)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/zipfile.py", line 1681, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/zipfile.py", line 1736, in _extract_member
+    shutil.copyfileobj(source, target)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/shutil.py", line 197, in copyfileobj
+    buf = fsrc_read(length)
+          ^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/zipfile.py", line 955, in read
+    data = self._read1(n)
+           ^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/zipfile.py", line 1023, in _read1
+    data += self._read2(n - len(data))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/zipfile.py", line 1058, in _read2
+    raise EOFError
+EOFError
+[2024-01-11 15:05:38,046,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-11 15:05:38,047,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-11 15:05:38,047,INFO,common,created directory at: artifacts]
+[2024-01-11 15:05:38,048,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-11 15:05:40,238,INFO,2427399911,artifacts/data_ingestion/data1.zip download! with the following info: 
+Connection: close
+Content-Length: 23627009
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "2e7409b328d118a1d37018be788babf8bf9640386387da766ac100e96efa3b93"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 828E:40F9:70AEE5:8F8407:65A05D80
+Accept-Ranges: bytes
+Date: Thu, 11 Jan 2024 22:05:38 GMT
+Via: 1.1 varnish
+X-Served-By: cache-lax-kwhp1940097-LAX
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1705010738.176006,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 1c9a48c936d825650b564763ea6bf466d0f964e2
+Expires: Thu, 11 Jan 2024 22:10:38 GMT
+Source-Age: 117
+
+]
+[2024-01-11 15:08:20,905,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-11 15:08:20,906,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-11 15:08:20,907,INFO,common,created directory at: artifacts]
+[2024-01-11 15:08:20,907,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-11 15:08:24,736,INFO,2427399911,artifacts/data_ingestion/data1.zip download! with the following info: 
+Connection: close
+Content-Length: 23627009
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "2e7409b328d118a1d37018be788babf8bf9640386387da766ac100e96efa3b93"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 828E:40F9:70AEE5:8F8407:65A05D80
+Accept-Ranges: bytes
+Date: Thu, 11 Jan 2024 22:08:21 GMT
+Via: 1.1 varnish
+X-Served-By: cache-lax-kwhp1940045-LAX
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1705010901.090178,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 9fd047a0cab6facfebf4f504bef108f5c71c08a6
+Expires: Thu, 11 Jan 2024 22:13:21 GMT
+Source-Age: 280
+
+]
+[2024-01-11 15:09:08,770,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-11 15:09:08,771,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-11 15:09:08,771,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-11 15:09:08,771,INFO,common,created directory at: artifacts]
+[2024-01-11 15:09:08,772,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-11 15:09:10,933,INFO,data_ingestion,artifacts/data_ingestion/orgdata.zip download! with the following info: 
+Connection: close
+Content-Length: 23627009
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "2e7409b328d118a1d37018be788babf8bf9640386387da766ac100e96efa3b93"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 828E:40F9:70AEE5:8F8407:65A05D80
+Accept-Ranges: bytes
+Date: Thu, 11 Jan 2024 22:09:09 GMT
+Via: 1.1 varnish
+X-Served-By: cache-lax-kwhp1940090-LAX
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1705010949.021076,VS0,VE205
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 75894036464a3cae3606d53d1bbca31d75218507
+Expires: Thu, 11 Jan 2024 22:14:09 GMT
+Source-Age: 0
+
+]
+[2024-01-11 15:09:11,128,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-01-11 15:39:01,464,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-11 15:39:01,473,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-11 15:39:01,473,INFO,common,created directory at: artifacts]
+[2024-01-11 15:39:01,473,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-11 15:39:48,877,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-11 15:39:48,878,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-11 15:39:48,879,INFO,common,created directory at: artifacts]
+[2024-01-11 15:39:48,879,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-11 15:41:04,554,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-11 15:41:04,555,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-11 15:41:04,556,INFO,common,created directory at: artifacts]
+[2024-01-11 15:41:04,556,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-11 15:41:47,333,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-11 15:41:47,335,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-11 15:41:47,336,INFO,common,created directory at: artifacts]
+[2024-01-11 15:41:47,336,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-11 17:53:08,781,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-11 17:53:08,800,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-11 17:53:08,801,INFO,common,created directory at: artifacts]
+[2024-01-11 17:53:08,801,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-11 18:24:37,567,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-11 18:24:37,567,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-11 18:24:37,568,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-11 18:24:37,568,INFO,common,created directory at: artifacts]
+[2024-01-11 18:24:37,568,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-11 18:24:45,697,INFO,data_ingestion,artifacts/data_ingestion/orgdata.zip download! with the following info: 
+Connection: close
+Content-Length: 23627009
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "2e7409b328d118a1d37018be788babf8bf9640386387da766ac100e96efa3b93"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 6CB0:40F9:768DC6:96E934:65A094D5
+Accept-Ranges: bytes
+Date: Fri, 12 Jan 2024 01:24:42 GMT
+Via: 1.1 varnish
+X-Served-By: cache-lax-kwhp1940029-LAX
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1705022678.841129,VS0,VE4656
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 8a17deef5c939b29f0952cb8c73fb52b3536ff01
+Expires: Fri, 12 Jan 2024 01:29:42 GMT
+Source-Age: 4
+
+]
+[2024-01-11 18:24:45,886,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-01-11 18:24:45,887,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-01-11 18:24:45,887,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-11 18:24:45,888,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-11 18:24:45,888,INFO,common,created directory at: artifacts]
+[2024-01-11 18:24:45,888,ERROR,main,ConfigurationManager.get_data_validation_config() missing 1 required positional argument: 'self']
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 22, in <module>
+    data_validation.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_02_data_validation.py", line 12, in main
+    data_validation_config = ConfigurationManager.get_data_validation_config()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ConfigurationManager.get_data_validation_config() missing 1 required positional argument: 'self'
+[2024-01-11 18:29:26,250,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-11 18:29:26,251,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-11 18:29:26,251,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-11 18:29:26,252,INFO,common,created directory at: artifacts]
+[2024-01-11 18:29:26,252,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-11 18:29:30,192,INFO,data_ingestion,artifacts/data_ingestion/orgdata.zip download! with the following info: 
+Connection: close
+Content-Length: 23627009
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "2e7409b328d118a1d37018be788babf8bf9640386387da766ac100e96efa3b93"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 6CB0:40F9:768DC6:96E934:65A094D5
+Accept-Ranges: bytes
+Date: Fri, 12 Jan 2024 01:29:26 GMT
+Via: 1.1 varnish
+X-Served-By: cache-lax-kwhp1940052-LAX
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1705022966.399773,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 2cc0cd604e30ba66aab67e13fb538f338cd1dc2d
+Expires: Fri, 12 Jan 2024 01:34:26 GMT
+Source-Age: 288
+
+]
+[2024-01-11 18:29:30,369,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-01-11 18:29:30,369,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-01-11 18:29:30,370,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-11 18:29:30,370,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-11 18:29:30,370,INFO,common,created directory at: artifacts]
+[2024-01-11 18:29:30,371,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-11 18:29:30,371,INFO,data_validation,Data Validation Status: True]
+[2024-01-11 18:29:30,371,INFO,data_validation,Data Validation Status: True]
+[2024-01-11 18:29:30,371,INFO,data_validation,Data Validation Status: True]
+[2024-01-11 18:29:30,371,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
