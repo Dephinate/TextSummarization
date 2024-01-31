@@ -37,3 +37,10 @@ Create DataIngestion
 2) Update params- Here not required
 3) Update entity- Define a dataclass for the configurations
 4) Update Configuration manager- Read configurations for data ingestion from configuration file and return the entity defined for it and create any directories if required
+
+
+Create Data Validation
+
+
+Create DataTransformation
+Convert Data to features

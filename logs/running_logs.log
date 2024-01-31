@@ -564,3 +564,1042 @@ x==========]
 [2024-01-11 18:29:30,371,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
 
 x==========]
+[2024-01-28 20:54:58,475,INFO,config,PyTorch version 2.1.2 available.]
+[2024-01-28 21:13:28,782,INFO,config,PyTorch version 2.1.2 available.]
+[2024-01-28 21:13:28,874,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-28 21:13:28,875,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 21:13:28,876,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 21:13:28,876,INFO,common,created directory at: artifacts]
+[2024-01-28 21:13:28,876,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-28 21:13:28,876,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-01-28 21:13:29,095,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-01-28 21:13:29,095,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-01-28 21:13:29,096,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 21:13:29,097,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 21:13:29,097,INFO,common,created directory at: artifacts]
+[2024-01-28 21:13:29,097,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-28 21:13:29,097,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 21:13:29,097,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 21:13:29,097,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 21:13:29,097,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-01-28 21:13:29,097,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-01-28 21:13:29,098,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 21:13:29,098,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 21:13:29,098,INFO,common,created directory at: artifacts]
+[2024-01-28 21:13:29,098,ERROR,main,Argument path_to_directories of type <class 'str'> to <function create_directories at 0x7f491c8f2200> does not match annotation type <class 'list'>]
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 35, in <module>
+    data_transformation.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_03_data_transformation.py", line 15, in main
+    data_transformation_config = config.get_data_transformation_config()
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/config/configurations.py", line 52, in get_data_transformation_config
+    create_directories(config.root_dir)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/ensure/main.py", line 803, in __call__
+    raise EnsureError(msg.format(
+ensure.main.EnsureError: Argument path_to_directories of type <class 'str'> to <function create_directories at 0x7f491c8f2200> does not match annotation type <class 'list'>
+[2024-01-28 21:16:13,019,INFO,config,PyTorch version 2.1.2 available.]
+[2024-01-28 21:16:13,111,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-28 21:16:13,112,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 21:16:13,112,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 21:16:13,112,INFO,common,created directory at: artifacts]
+[2024-01-28 21:16:13,112,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-28 21:16:13,112,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-01-28 21:16:13,298,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-01-28 21:16:13,298,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-01-28 21:16:13,299,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 21:16:13,299,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 21:16:13,299,INFO,common,created directory at: artifacts]
+[2024-01-28 21:16:13,299,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-28 21:16:13,299,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 21:16:13,300,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 21:16:13,300,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 21:16:13,300,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-01-28 21:16:13,300,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-01-28 21:16:13,300,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 21:16:13,301,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 21:16:13,301,INFO,common,created directory at: artifacts]
+[2024-01-28 21:16:13,301,INFO,common,created directory at: artifacts/data_transformation]
+[2024-01-28 21:16:15,786,ERROR,main,'dialouge']
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 35, in <module>
+    data_transformation.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_03_data_transformation.py", line 18, in main
+    data_transformation.convert()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 39, in convert
+    self.convert_examples_to_features(example_batch=dataset_samsum), batched=True)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 34, in convert_examples_to_features
+    raise e
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 22, in convert_examples_to_features
+    text=example_batch['dialouge'], max_length=1024, truncation=True)
+         ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/dataset_dict.py", line 74, in __getitem__
+    return super().__getitem__(k)
+           ^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'dialouge'
+[2024-01-28 21:18:09,078,INFO,config,PyTorch version 2.1.2 available.]
+[2024-01-28 21:18:09,163,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-28 21:18:09,164,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 21:18:09,165,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 21:18:09,165,INFO,common,created directory at: artifacts]
+[2024-01-28 21:18:09,165,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-28 21:18:09,165,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-01-28 21:18:09,357,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-01-28 21:18:09,357,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-01-28 21:18:09,358,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 21:18:09,358,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 21:18:09,358,INFO,common,created directory at: artifacts]
+[2024-01-28 21:18:09,359,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-28 21:18:09,359,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 21:18:09,361,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 21:18:09,361,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 21:18:09,361,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-01-28 21:18:09,361,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-01-28 21:18:09,362,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 21:18:09,362,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 21:18:09,362,INFO,common,created directory at: artifacts]
+[2024-01-28 21:18:09,362,INFO,common,created directory at: artifacts/data_transformation]
+[2024-01-28 21:18:10,195,ERROR,main,'dialouge']
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 35, in <module>
+    data_transformation.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_03_data_transformation.py", line 18, in main
+    data_transformation.convert()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 39, in convert
+    self.convert_examples_to_features(example_batch=dataset_samsum), batched=True)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 34, in convert_examples_to_features
+    raise e
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 22, in convert_examples_to_features
+    text=example_batch['dialouge'], max_length=1024, truncation=True)
+         ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/dataset_dict.py", line 74, in __getitem__
+    return super().__getitem__(k)
+           ^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'dialouge'
+[2024-01-28 21:20:57,325,INFO,config,PyTorch version 2.1.2 available.]
+[2024-01-28 21:20:57,435,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-28 21:20:57,436,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 21:20:57,436,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 21:20:57,436,INFO,common,created directory at: artifacts]
+[2024-01-28 21:20:57,436,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-28 21:20:57,436,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-01-28 21:20:57,635,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-01-28 21:20:57,635,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-01-28 21:20:57,636,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 21:20:57,636,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 21:20:57,636,INFO,common,created directory at: artifacts]
+[2024-01-28 21:20:57,636,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-28 21:20:57,636,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 21:20:57,637,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 21:20:57,637,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 21:20:57,637,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-01-28 21:20:57,637,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-01-28 21:20:57,638,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 21:20:57,638,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 21:20:57,638,INFO,common,created directory at: artifacts]
+[2024-01-28 21:20:57,638,INFO,common,created directory at: artifacts/data_transformation]
+[2024-01-28 21:20:58,604,ERROR,main,'dialogue']
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 35, in <module>
+    data_transformation.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_03_data_transformation.py", line 18, in main
+    data_transformation.convert()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 39, in convert
+    self.convert_examples_to_features(example_batch=dataset_samsum), batched=True)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 34, in convert_examples_to_features
+    raise e
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 22, in convert_examples_to_features
+    text=example_batch['dialogue'], max_length=1024, truncation=True)
+         ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/dataset_dict.py", line 74, in __getitem__
+    return super().__getitem__(k)
+           ^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'dialogue'
+[2024-01-28 21:24:08,908,INFO,config,PyTorch version 2.1.2 available.]
+[2024-01-28 21:24:08,991,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-28 21:24:08,992,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 21:24:08,992,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 21:24:08,992,INFO,common,created directory at: artifacts]
+[2024-01-28 21:24:08,992,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-28 21:24:08,992,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-01-28 21:24:09,172,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-01-28 21:24:09,172,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-01-28 21:24:09,173,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 21:24:09,173,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 21:24:09,174,INFO,common,created directory at: artifacts]
+[2024-01-28 21:24:09,174,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-28 21:24:09,174,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 21:24:09,174,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 21:24:09,174,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 21:24:09,174,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-01-28 21:24:09,174,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-01-28 21:24:09,175,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 21:24:09,175,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 21:24:09,175,INFO,common,created directory at: artifacts]
+[2024-01-28 21:24:09,175,INFO,common,created directory at: artifacts/data_transformation]
+[2024-01-28 21:24:10,132,ERROR,main,'dialogue']
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 35, in <module>
+    data_transformation.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_03_data_transformation.py", line 18, in main
+    data_transformation.convert()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 39, in convert
+    self.convert_examples_to_features(example_batch=dataset_samsum), batched=True)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 34, in convert_examples_to_features
+    raise e
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 22, in convert_examples_to_features
+    example_batch['dialogue'], max_length=1024, truncation=True)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/dataset_dict.py", line 74, in __getitem__
+    return super().__getitem__(k)
+           ^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'dialogue'
+[2024-01-28 21:34:23,688,INFO,config,PyTorch version 2.1.2 available.]
+[2024-01-28 21:34:23,770,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-28 21:34:23,771,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 21:34:23,771,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 21:34:23,771,INFO,common,created directory at: artifacts]
+[2024-01-28 21:34:23,771,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-28 21:34:23,771,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-01-28 21:34:23,965,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-01-28 21:34:23,965,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-01-28 21:34:23,966,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 21:34:23,966,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 21:34:23,966,INFO,common,created directory at: artifacts]
+[2024-01-28 21:34:23,966,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-28 21:34:23,966,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 21:34:23,966,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 21:34:23,966,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 21:34:23,966,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-01-28 21:34:23,966,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-01-28 21:34:23,967,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 21:34:23,967,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 21:34:23,967,INFO,common,created directory at: artifacts]
+[2024-01-28 21:34:23,967,INFO,common,created directory at: artifacts/data_transformation]
+[2024-01-28 21:34:24,722,ERROR,main,'dialogue']
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 35, in <module>
+    data_transformation.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_03_data_transformation.py", line 18, in main
+    data_transformation.convert()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 39, in convert
+    self.convert_examples_to_features(example_batch=dataset_samsum), batched=True)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 34, in convert_examples_to_features
+    raise e
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 22, in convert_examples_to_features
+    example_batch['dialogue'], max_length=1024, truncation=True)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/dataset_dict.py", line 74, in __getitem__
+    return super().__getitem__(k)
+           ^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'dialogue'
+[2024-01-28 21:41:26,773,INFO,config,PyTorch version 2.1.2 available.]
+[2024-01-28 21:41:26,860,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-28 21:41:26,861,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 21:41:26,861,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 21:41:26,862,INFO,common,created directory at: artifacts]
+[2024-01-28 21:41:26,862,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-28 21:41:26,862,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-01-28 21:41:27,038,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-01-28 21:41:27,038,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-01-28 21:41:27,039,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 21:41:27,039,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 21:41:27,040,INFO,common,created directory at: artifacts]
+[2024-01-28 21:41:27,040,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-28 21:41:27,040,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 21:41:27,040,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 21:41:27,040,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 21:41:27,040,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-01-28 21:41:27,040,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-01-28 21:41:27,041,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 21:41:27,041,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 21:41:27,041,INFO,common,created directory at: artifacts]
+[2024-01-28 21:41:27,041,INFO,common,created directory at: artifacts/data_transformation]
+[2024-01-28 21:41:27,809,ERROR,main,'summary']
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 35, in <module>
+    data_transformation.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_03_data_transformation.py", line 18, in main
+    data_transformation.convert()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 39, in convert
+    self.convert_examples_to_features(example_batch=dataset_samsum), batched=True)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 34, in convert_examples_to_features
+    raise e
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 22, in convert_examples_to_features
+    example_batch['summary'], max_length=1024, truncation=True)
+    ~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/dataset_dict.py", line 74, in __getitem__
+    return super().__getitem__(k)
+           ^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'summary'
+[2024-01-28 21:55:35,547,INFO,config,PyTorch version 2.1.2 available.]
+[2024-01-28 21:55:35,632,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-28 21:55:35,633,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 21:55:35,633,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 21:55:35,633,INFO,common,created directory at: artifacts]
+[2024-01-28 21:55:35,633,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-28 21:55:35,633,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-01-28 21:55:35,822,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-01-28 21:55:35,822,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-01-28 21:55:35,823,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 21:55:35,823,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 21:55:35,823,INFO,common,created directory at: artifacts]
+[2024-01-28 21:55:35,823,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-28 21:55:35,823,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 21:55:35,823,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 21:55:35,823,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 21:55:35,823,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-01-28 21:55:35,823,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-01-28 21:55:35,824,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 21:55:35,824,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 21:55:35,824,INFO,common,created directory at: artifacts]
+[2024-01-28 21:55:35,824,INFO,common,created directory at: artifacts/data_transformation]
+[2024-01-28 21:55:36,563,ERROR,main,'dialogue']
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 35, in <module>
+    data_transformation.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_03_data_transformation.py", line 18, in main
+    data_transformation.convert()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 39, in convert
+    self.convert_examples_to_features(example_batch=dataset_samsum), batched=True)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 34, in convert_examples_to_features
+    raise e
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 22, in convert_examples_to_features
+    example_batch['dialogue'], max_length=1024, truncation=True)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/dataset_dict.py", line 74, in __getitem__
+    return super().__getitem__(k)
+           ^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'dialogue'
+[2024-01-28 21:59:11,925,INFO,config,PyTorch version 2.1.2 available.]
+[2024-01-28 21:59:12,175,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-28 21:59:12,181,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 21:59:12,181,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 21:59:12,182,INFO,common,created directory at: artifacts]
+[2024-01-28 21:59:12,182,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-28 21:59:12,182,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-01-28 21:59:12,362,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-01-28 21:59:12,362,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-01-28 21:59:12,366,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 21:59:12,366,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 21:59:12,366,INFO,common,created directory at: artifacts]
+[2024-01-28 21:59:12,367,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-28 21:59:12,367,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 21:59:12,367,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 21:59:12,367,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 21:59:12,367,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-01-28 21:59:12,367,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-01-28 22:01:15,420,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 22:01:15,422,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 22:01:15,422,INFO,common,created directory at: artifacts]
+[2024-01-28 22:04:24,178,INFO,common,created directory at: artifacts/data_transformation]
+[2024-01-28 22:14:03,442,ERROR,main,'dialogue']
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 35, in <module>
+    data_transformation.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_03_data_transformation.py", line 18, in main
+    data_transformation.convert()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 39, in convert
+    self.convert_examples_to_features(example_batch=dataset_samsum), batched=True)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 34, in convert_examples_to_features
+    raise e
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 22, in convert_examples_to_features
+    example_batch['dialogue'], max_length=1024, truncation=True)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/dataset_dict.py", line 74, in __getitem__
+    return super().__getitem__(k)
+           ^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'dialogue'
+[2024-01-28 22:22:45,725,INFO,config,PyTorch version 2.1.2 available.]
+[2024-01-28 22:22:45,817,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-28 22:22:45,818,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 22:22:45,819,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 22:22:45,819,INFO,common,created directory at: artifacts]
+[2024-01-28 22:22:45,819,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-28 22:22:45,819,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-01-28 22:22:46,003,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-01-28 22:22:46,003,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-01-28 22:22:46,004,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 22:22:46,004,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 22:22:46,004,INFO,common,created directory at: artifacts]
+[2024-01-28 22:22:46,004,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-28 22:22:46,004,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 22:22:46,005,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 22:22:46,005,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 22:22:46,005,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-01-28 22:22:46,005,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-01-28 22:22:46,006,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 22:22:46,006,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 22:22:46,006,INFO,common,created directory at: artifacts]
+[2024-01-28 22:22:46,006,INFO,common,created directory at: artifacts/data_transformation]
+[2024-01-28 22:22:50,555,ERROR,main,'dialogue']
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 35, in <module>
+    data_transformation.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_03_data_transformation.py", line 18, in main
+    data_transformation.convert()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 39, in convert
+    self.convert_examples_to_features(example_batch=dataset_samsum), batched=True)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 34, in convert_examples_to_features
+    raise e
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 22, in convert_examples_to_features
+    example_batch['dialogue'], max_length=1024, truncation=True)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/dataset_dict.py", line 74, in __getitem__
+    return super().__getitem__(k)
+           ^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'dialogue'
+[2024-01-28 22:37:27,861,INFO,config,PyTorch version 2.1.2 available.]
+[2024-01-28 22:37:28,090,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-28 22:37:28,095,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 22:37:28,095,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 22:37:28,096,INFO,common,created directory at: artifacts]
+[2024-01-28 22:37:28,096,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-28 22:37:28,096,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-01-28 22:37:28,281,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-01-28 22:37:28,281,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-01-28 22:37:28,284,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 22:37:28,285,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 22:37:28,285,INFO,common,created directory at: artifacts]
+[2024-01-28 22:37:28,285,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-28 22:37:28,285,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 22:37:28,286,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 22:37:28,286,INFO,data_validation,Data Validation Status: True]
+[2024-01-28 22:37:28,286,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-01-28 22:37:28,286,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-01-28 22:37:36,396,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-28 22:37:36,398,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-28 22:37:36,398,INFO,common,created directory at: artifacts]
+[2024-01-28 22:37:36,398,INFO,common,created directory at: artifacts/data_transformation]
+[2024-01-29 20:07:22,569,INFO,config,PyTorch version 2.1.2 available.]
+[2024-01-29 20:07:22,801,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-29 20:07:22,803,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:07:22,805,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:07:22,805,INFO,common,created directory at: artifacts]
+[2024-01-29 20:07:22,805,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-29 20:07:22,805,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-01-29 20:07:23,189,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-01-29 20:07:23,189,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-01-29 20:07:23,191,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:07:23,191,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:07:23,191,INFO,common,created directory at: artifacts]
+[2024-01-29 20:07:23,192,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-29 20:07:23,192,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:07:23,192,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:07:23,193,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:07:23,193,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-01-29 20:07:23,193,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-01-29 20:07:23,195,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:07:23,195,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:07:23,196,INFO,common,created directory at: artifacts]
+[2024-01-29 20:07:23,196,INFO,common,created directory at: artifacts/data_transformation]
+[2024-01-29 20:07:24,348,ERROR,main,'dialogue']
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 35, in <module>
+    data_transformation.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_03_data_transformation.py", line 18, in main
+    data_transformation.convert()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 39, in convert
+    self.convert_examples_to_features(example_batch=dataset_samsum), batched=True)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 34, in convert_examples_to_features
+    raise e
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 22, in convert_examples_to_features
+    example_batch['dialogue'], max_length=1024, truncation=True)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/dataset_dict.py", line 74, in __getitem__
+    return super().__getitem__(k)
+           ^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'dialogue'
+[2024-01-29 20:08:18,330,INFO,config,PyTorch version 2.1.2 available.]
+[2024-01-29 20:08:18,739,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-29 20:08:18,748,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:08:18,750,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:08:18,750,INFO,common,created directory at: artifacts]
+[2024-01-29 20:08:18,750,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-29 20:08:18,751,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-01-29 20:08:19,121,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-01-29 20:08:19,121,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-01-29 20:08:19,127,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:08:19,128,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:08:19,128,INFO,common,created directory at: artifacts]
+[2024-01-29 20:08:19,128,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-29 20:08:19,128,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:08:19,128,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:08:19,129,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:08:19,129,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-01-29 20:08:19,129,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-01-29 20:08:32,816,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:08:32,817,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:08:32,818,INFO,common,created directory at: artifacts]
+[2024-01-29 20:08:32,818,INFO,common,created directory at: artifacts/data_transformation]
+[2024-01-29 20:15:53,768,INFO,config,PyTorch version 2.1.2 available.]
+[2024-01-29 20:15:54,074,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-29 20:15:54,080,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:15:54,082,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:15:54,082,INFO,common,created directory at: artifacts]
+[2024-01-29 20:15:54,082,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-29 20:15:54,082,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-01-29 20:15:54,410,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-01-29 20:15:54,410,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-01-29 20:15:54,415,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:15:54,416,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:15:54,416,INFO,common,created directory at: artifacts]
+[2024-01-29 20:15:54,416,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-29 20:15:54,416,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:15:54,417,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:15:54,417,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:15:54,417,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-01-29 20:15:54,417,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-01-29 20:15:59,296,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:15:59,297,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:15:59,297,INFO,common,created directory at: artifacts]
+[2024-01-29 20:15:59,297,INFO,common,created directory at: artifacts/data_transformation]
+[2024-01-29 20:17:39,863,ERROR,main,'dict' object is not callable]
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 36, in <module>
+    data_transformation.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_03_data_transformation.py", line 18, in main
+    data_transformation.convert()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 42, in convert
+    dataset_samsum_pt = dataset_samsum.map(
+                        ^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/dataset_dict.py", line 868, in map
+    {
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/dataset_dict.py", line 869, in <dictcomp>
+    k: dataset.map(
+       ^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 592, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 557, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 3093, in map
+    for rank, done, content in Dataset._map_single(**dataset_kwargs):
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 3470, in _map_single
+    batch = apply_function_on_filtered_inputs(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 3349, in apply_function_on_filtered_inputs
+    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'dict' object is not callable
+[2024-01-29 20:20:04,842,INFO,config,PyTorch version 2.1.2 available.]
+[2024-01-29 20:20:04,971,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-29 20:20:04,973,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:20:04,973,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:20:04,974,INFO,common,created directory at: artifacts]
+[2024-01-29 20:20:04,974,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-29 20:20:04,974,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-01-29 20:20:05,294,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-01-29 20:20:05,294,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-01-29 20:20:05,296,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:20:05,297,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:20:05,297,INFO,common,created directory at: artifacts]
+[2024-01-29 20:20:05,297,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-29 20:20:05,297,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:20:05,297,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:20:05,297,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:20:05,297,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-01-29 20:20:05,297,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-01-29 20:20:05,299,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:20:05,300,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:20:05,300,INFO,common,created directory at: artifacts]
+[2024-01-29 20:20:05,300,INFO,common,created directory at: artifacts/data_transformation]
+[2024-01-29 20:20:10,961,INFO,config,PyTorch version 2.1.2 available.]
+[2024-01-29 20:20:11,082,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-29 20:20:11,084,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:20:11,084,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:20:11,084,INFO,common,created directory at: artifacts]
+[2024-01-29 20:20:11,085,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-29 20:20:11,085,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-01-29 20:20:11,387,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-01-29 20:20:11,387,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-01-29 20:20:11,389,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:20:11,389,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:20:11,389,INFO,common,created directory at: artifacts]
+[2024-01-29 20:20:11,389,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-29 20:20:11,389,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:20:11,390,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:20:11,390,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:20:11,390,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-01-29 20:20:11,390,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-01-29 20:20:11,391,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:20:11,392,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:20:11,392,INFO,common,created directory at: artifacts]
+[2024-01-29 20:20:11,392,INFO,common,created directory at: artifacts/data_transformation]
+[2024-01-29 20:20:17,916,ERROR,main,'dict' object is not callable]
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 36, in <module>
+    data_transformation.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_03_data_transformation.py", line 18, in main
+    data_transformation.convert()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 42, in convert
+    dataset_samsum_pt = dataset_samsum.map(
+                        ^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/dataset_dict.py", line 868, in map
+    {
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/dataset_dict.py", line 869, in <dictcomp>
+    k: dataset.map(
+       ^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 592, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 557, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 3093, in map
+    for rank, done, content in Dataset._map_single(**dataset_kwargs):
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 3470, in _map_single
+    batch = apply_function_on_filtered_inputs(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 3349, in apply_function_on_filtered_inputs
+    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'dict' object is not callable
+[2024-01-29 20:22:57,890,INFO,config,PyTorch version 2.1.2 available.]
+[2024-01-29 20:22:58,181,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-29 20:22:58,187,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:22:58,188,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:22:58,189,INFO,common,created directory at: artifacts]
+[2024-01-29 20:22:58,189,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-29 20:22:58,189,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-01-29 20:22:58,493,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-01-29 20:22:58,493,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-01-29 20:22:58,499,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:22:58,501,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:22:58,501,INFO,common,created directory at: artifacts]
+[2024-01-29 20:22:58,501,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-29 20:22:58,501,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:22:58,502,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:22:58,502,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:22:58,502,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-01-29 20:22:58,502,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-01-29 20:22:58,510,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:22:58,511,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:22:58,511,INFO,common,created directory at: artifacts]
+[2024-01-29 20:22:58,511,INFO,common,created directory at: artifacts/data_transformation]
+[2024-01-29 20:32:34,887,INFO,config,PyTorch version 2.1.2 available.]
+[2024-01-29 20:32:35,015,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-29 20:32:35,016,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:32:35,017,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:32:35,017,INFO,common,created directory at: artifacts]
+[2024-01-29 20:32:35,017,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-29 20:32:35,017,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-01-29 20:32:35,319,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-01-29 20:32:35,320,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-01-29 20:32:35,321,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:32:35,321,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:32:35,321,INFO,common,created directory at: artifacts]
+[2024-01-29 20:32:35,322,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-29 20:32:35,322,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:32:35,322,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:32:35,322,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:32:35,322,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-01-29 20:32:35,322,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-01-29 20:32:35,323,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:32:35,324,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:32:35,324,INFO,common,created directory at: artifacts]
+[2024-01-29 20:32:35,324,INFO,common,created directory at: artifacts/data_transformation]
+[2024-01-29 20:32:41,611,ERROR,main,'dict' object is not callable]
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 36, in <module>
+    data_transformation.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_03_data_transformation.py", line 18, in main
+    data_transformation.convert()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 42, in convert
+    dataset_samsum_pt = v.map(
+                        ^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 592, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 557, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 3093, in map
+    for rank, done, content in Dataset._map_single(**dataset_kwargs):
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 3470, in _map_single
+    batch = apply_function_on_filtered_inputs(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 3349, in apply_function_on_filtered_inputs
+    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'dict' object is not callable
+[2024-01-29 20:32:58,045,INFO,config,PyTorch version 2.1.2 available.]
+[2024-01-29 20:32:58,340,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-29 20:32:58,346,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:32:58,347,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:32:58,348,INFO,common,created directory at: artifacts]
+[2024-01-29 20:32:58,348,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-29 20:32:58,348,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-01-29 20:32:58,650,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-01-29 20:32:58,650,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-01-29 20:32:58,656,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:32:58,657,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:32:58,657,INFO,common,created directory at: artifacts]
+[2024-01-29 20:32:58,657,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-29 20:32:58,658,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:32:58,658,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:32:58,658,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:32:58,659,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-01-29 20:32:58,659,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-01-29 20:32:58,666,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:32:58,667,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:32:58,668,INFO,common,created directory at: artifacts]
+[2024-01-29 20:32:58,668,INFO,common,created directory at: artifacts/data_transformation]
+[2024-01-29 20:37:03,792,INFO,config,PyTorch version 2.1.2 available.]
+[2024-01-29 20:37:04,081,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-29 20:37:04,087,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:37:04,089,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:37:04,089,INFO,common,created directory at: artifacts]
+[2024-01-29 20:37:04,089,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-29 20:37:04,089,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-01-29 20:37:04,378,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-01-29 20:37:04,378,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-01-29 20:37:04,383,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:37:04,384,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:37:04,385,INFO,common,created directory at: artifacts]
+[2024-01-29 20:37:04,385,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-29 20:37:04,385,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:37:04,385,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:37:04,386,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:37:04,386,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-01-29 20:37:04,386,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-01-29 20:37:04,394,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:37:04,395,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:37:04,396,INFO,common,created directory at: artifacts]
+[2024-01-29 20:37:04,396,INFO,common,created directory at: artifacts/data_transformation]
+[2024-01-29 20:41:31,345,INFO,config,PyTorch version 2.1.2 available.]
+[2024-01-29 20:41:31,693,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-29 20:41:31,702,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:41:31,704,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:41:31,704,INFO,common,created directory at: artifacts]
+[2024-01-29 20:41:31,705,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-29 20:41:31,705,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-01-29 20:41:32,009,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-01-29 20:41:32,009,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-01-29 20:41:32,014,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:41:32,015,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:41:32,015,INFO,common,created directory at: artifacts]
+[2024-01-29 20:41:32,016,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-29 20:41:32,016,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:41:32,016,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:41:32,017,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:41:32,017,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-01-29 20:41:32,017,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-01-29 20:41:32,025,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:41:32,027,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:41:32,027,INFO,common,created directory at: artifacts]
+[2024-01-29 20:41:32,027,INFO,common,created directory at: artifacts/data_transformation]
+[2024-01-29 20:41:56,729,ERROR,main,"Column train not in the dataset. Current columns in the dataset: ['id', 'dialogue', 'summary']"]
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 36, in <module>
+    data_transformation.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_03_data_transformation.py", line 18, in main
+    data_transformation.convert()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 45, in convert
+    self.convert_examples_to_features(example_batch=v, set=k), batched=True)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 35, in convert_examples_to_features
+    raise e
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 23, in convert_examples_to_features
+    example_batch[set]['dialogue'], max_length=1024, truncation=True)
+    ~~~~~~~~~~~~~^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 2800, in __getitem__
+    return self._getitem(key)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 2784, in _getitem
+    pa_subtable = query_table(self._data, key, indices=self._indices if self._indices is not None else None)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/formatting/formatting.py", line 580, in query_table
+    _check_valid_column_key(key, table.column_names)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/formatting/formatting.py", line 520, in _check_valid_column_key
+    raise KeyError(f"Column {key} not in the dataset. Current columns in the dataset: {columns}")
+KeyError: "Column train not in the dataset. Current columns in the dataset: ['id', 'dialogue', 'summary']"
+[2024-01-29 20:44:49,027,INFO,config,PyTorch version 2.1.2 available.]
+[2024-01-29 20:44:49,317,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-29 20:44:49,323,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:44:49,324,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:44:49,325,INFO,common,created directory at: artifacts]
+[2024-01-29 20:44:49,325,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-29 20:44:49,325,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-01-29 20:44:49,643,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-01-29 20:44:49,643,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-01-29 20:44:49,649,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:44:49,650,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:44:49,650,INFO,common,created directory at: artifacts]
+[2024-01-29 20:44:49,650,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-29 20:44:49,650,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:44:49,651,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:44:49,651,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:44:49,651,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-01-29 20:44:49,651,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-01-29 20:44:49,658,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:44:49,659,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:44:49,660,INFO,common,created directory at: artifacts]
+[2024-01-29 20:44:49,660,INFO,common,created directory at: artifacts/data_transformation]
+[2024-01-29 20:46:00,311,ERROR,main,'dict' object is not callable]
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 36, in <module>
+    data_transformation.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_03_data_transformation.py", line 18, in main
+    data_transformation.convert()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/data_transformation.py", line 44, in convert
+    dataset_samsum_pt = tmp.map(
+                        ^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/dataset_dict.py", line 868, in map
+    {
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/dataset_dict.py", line 869, in <dictcomp>
+    k: dataset.map(
+       ^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 592, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 557, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 3093, in map
+    for rank, done, content in Dataset._map_single(**dataset_kwargs):
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 3470, in _map_single
+    batch = apply_function_on_filtered_inputs(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 3349, in apply_function_on_filtered_inputs
+    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'dict' object is not callable
+[2024-01-29 20:52:24,957,INFO,config,PyTorch version 2.1.2 available.]
+[2024-01-29 20:52:25,262,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-29 20:52:25,268,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:52:25,270,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:52:25,270,INFO,common,created directory at: artifacts]
+[2024-01-29 20:52:25,270,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-29 20:52:25,270,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-01-29 20:52:25,568,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-01-29 20:52:25,568,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-01-29 20:52:25,574,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:52:25,575,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:52:25,575,INFO,common,created directory at: artifacts]
+[2024-01-29 20:52:25,575,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-29 20:52:25,576,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:52:25,576,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:52:25,577,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:52:25,577,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-01-29 20:52:25,577,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-01-29 20:52:25,583,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:52:25,585,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:52:25,585,INFO,common,created directory at: artifacts]
+[2024-01-29 20:52:25,585,INFO,common,created directory at: artifacts/data_transformation]
+[2024-01-29 20:52:50,065,INFO,main,>>>>>> Stage Data Transformation Stage completed <<<<<<
+
+x==========]
+[2024-01-29 20:56:26,163,INFO,config,PyTorch version 2.1.2 available.]
+[2024-01-29 20:56:26,463,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-29 20:56:26,470,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:56:26,472,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:56:26,472,INFO,common,created directory at: artifacts]
+[2024-01-29 20:56:26,472,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-29 20:56:26,472,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-01-29 20:56:26,796,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-01-29 20:56:26,796,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-01-29 20:56:26,801,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:56:26,802,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:56:26,802,INFO,common,created directory at: artifacts]
+[2024-01-29 20:56:26,803,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-29 20:56:26,803,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:56:26,803,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:56:26,803,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:56:26,803,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-01-29 20:56:26,803,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-01-29 20:56:26,814,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:56:26,816,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:56:26,816,INFO,common,created directory at: artifacts]
+[2024-01-29 20:56:26,817,INFO,common,created directory at: artifacts/data_transformation]
+[2024-01-29 20:57:04,898,INFO,config,PyTorch version 2.1.2 available.]
+[2024-01-29 20:57:05,195,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-29 20:57:05,202,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:57:05,203,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:57:05,203,INFO,common,created directory at: artifacts]
+[2024-01-29 20:57:05,204,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-29 20:57:05,204,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-01-29 20:57:05,514,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-01-29 20:57:05,514,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-01-29 20:57:05,519,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:57:05,520,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:57:05,520,INFO,common,created directory at: artifacts]
+[2024-01-29 20:57:05,520,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-29 20:57:05,520,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:57:05,520,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:57:05,521,INFO,data_validation,Data Validation Status: True]
+[2024-01-29 20:57:05,521,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-01-29 20:57:05,521,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-01-29 20:57:05,526,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-29 20:57:05,527,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-29 20:57:05,527,INFO,common,created directory at: artifacts]
+[2024-01-29 20:57:05,527,INFO,common,created directory at: artifacts/data_transformation]
+[2024-01-29 20:58:12,443,INFO,main,>>>>>> Stage Data Transformation Stage completed <<<<<<
+
+x==========]
+[2024-01-30 20:21:17,562,INFO,config,PyTorch version 2.1.2 available.]
+[2024-01-30 20:21:17,705,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-01-30 20:21:17,706,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-30 20:21:17,706,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-30 20:21:17,706,INFO,common,created directory at: artifacts]
+[2024-01-30 20:21:17,707,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-01-30 20:21:27,492,INFO,data_ingestion,artifacts/data_ingestion/orgdata.zip download! with the following info: 
+Connection: close
+Content-Length: 23627009
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "2e7409b328d118a1d37018be788babf8bf9640386387da766ac100e96efa3b93"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 55F2:50C4:9DF756:D4B888:65B9BCAD
+Accept-Ranges: bytes
+Date: Wed, 31 Jan 2024 03:21:19 GMT
+Via: 1.1 varnish
+X-Served-By: cache-lax-kwhp1940051-LAX
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1706671278.999431,VS0,VE1034
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 6c1fa63bb21bb540b55b2491efca464c0c73e6b3
+Expires: Wed, 31 Jan 2024 03:26:19 GMT
+Source-Age: 1
+
+]
+[2024-01-30 20:21:27,673,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-01-30 20:21:27,674,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-01-30 20:21:27,674,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-30 20:21:27,675,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-30 20:21:27,675,INFO,common,created directory at: artifacts]
+[2024-01-30 20:21:27,675,INFO,common,created directory at: artifacts/data_validation]
+[2024-01-30 20:21:27,675,INFO,data_validation,Data Validation Status: True]
+[2024-01-30 20:21:27,675,INFO,data_validation,Data Validation Status: True]
+[2024-01-30 20:21:27,675,INFO,data_validation,Data Validation Status: True]
+[2024-01-30 20:21:27,675,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-01-30 20:21:27,675,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-01-30 20:21:27,676,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-01-30 20:21:27,676,INFO,common,yaml file params.yaml loaded successfully]
+[2024-01-30 20:21:27,676,INFO,common,created directory at: artifacts]
+[2024-01-30 20:21:27,676,INFO,common,created directory at: artifacts/data_transformation]
+[2024-01-30 20:21:29,963,INFO,main,>>>>>> Stage Data Transformation Stage completed <<<<<<
+
+x==========]

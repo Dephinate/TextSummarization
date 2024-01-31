@@ -20,3 +20,9 @@ class DataValidationConfig:
     status_file:str
     all_required_files:list
     local_data_folder: Path
+
+@dataclass
+class DataTransformationConfig:
+    root_dir: Path
+    data_path: Path
+    tokenizer_name: str
