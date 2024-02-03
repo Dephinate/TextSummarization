@@ -1603,3 +1603,298 @@ x==========]
 [2024-01-30 20:21:29,963,INFO,main,>>>>>> Stage Data Transformation Stage completed <<<<<<
 
 x==========]
+[2024-02-01 17:47:58,832,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-01 17:47:59,002,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-01 17:47:59,003,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-01 17:47:59,004,INFO,common,created directory at: artifacts]
+[2024-02-01 17:47:59,004,INFO,common,created directory at: artifacts/model_trainer]
+[2024-02-01 16:54:43,580,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-01 16:54:43,741,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-01 16:54:43,742,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-01 16:54:43,743,INFO,common,created directory at: artifacts]
+[2024-02-01 16:54:43,743,INFO,common,created directory at: artifacts/model_trainer]
+[2024-02-01 17:01:34,216,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-01 17:01:34,380,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-01 17:01:34,381,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-01 17:01:34,381,INFO,common,created directory at: artifacts]
+[2024-02-01 17:01:34,381,INFO,common,created directory at: artifacts/model_trainer]
+[2024-02-01 17:10:50,366,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-01 17:10:50,608,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-01 17:10:50,609,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-01 17:10:50,610,INFO,common,created directory at: artifacts]
+[2024-02-01 17:10:50,610,INFO,common,created directory at: artifacts/model_trainer]
+[2024-02-01 17:15:58,029,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-01 17:15:58,299,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-01 17:15:58,301,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-01 17:15:58,301,INFO,common,created directory at: artifacts]
+[2024-02-01 17:15:58,301,INFO,common,created directory at: artifacts/model_trainer]
+[2024-02-01 17:17:27,586,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-01 17:17:27,852,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-01 17:17:27,854,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-01 17:17:27,854,INFO,common,created directory at: artifacts]
+[2024-02-01 17:17:27,854,INFO,common,created directory at: artifacts/model_trainer]
+[2024-02-01 17:18:00,418,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-01 17:18:00,679,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-01 17:18:00,680,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-01 17:18:00,680,INFO,common,created directory at: artifacts]
+[2024-02-01 17:18:00,680,INFO,common,created directory at: artifacts/model_trainer]
+[2024-02-01 17:37:49,116,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-01 17:37:49,408,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-01 17:37:49,409,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-01 17:37:49,410,INFO,common,created directory at: artifacts]
+[2024-02-01 17:37:49,410,INFO,common,created directory at: artifacts/model_trainer]
+[2024-02-01 17:40:04,661,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-01 17:40:04,945,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-01 17:40:04,946,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-01 17:40:04,947,INFO,common,created directory at: artifacts]
+[2024-02-01 17:40:04,947,INFO,common,created directory at: artifacts/model_trainer]
+[2024-02-01 17:41:20,822,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-01 17:41:21,097,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-01 17:41:21,098,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-01 17:41:21,099,INFO,common,created directory at: artifacts]
+[2024-02-01 17:41:21,099,INFO,common,created directory at: artifacts/model_trainer]
+[2024-02-01 17:53:32,563,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-01 17:53:32,812,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-01 17:53:32,813,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-01 17:53:32,814,INFO,common,created directory at: artifacts]
+[2024-02-01 17:53:32,814,INFO,common,created directory at: artifacts/model_trainer]
+[2024-02-01 19:40:18,140,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-01 19:40:18,683,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-02-01 19:40:18,684,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-01 19:40:18,685,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-01 19:40:18,685,INFO,common,created directory at: artifacts]
+[2024-02-01 19:40:18,685,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-02-01 19:40:18,685,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-02-01 19:40:18,892,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-02-01 19:40:18,892,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-02-01 19:40:18,893,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-01 19:40:18,894,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-01 19:40:18,894,INFO,common,created directory at: artifacts]
+[2024-02-01 19:40:18,894,INFO,common,created directory at: artifacts/data_validation]
+[2024-02-01 19:40:18,894,INFO,data_validation,Data Validation Status: True]
+[2024-02-01 19:40:18,894,INFO,data_validation,Data Validation Status: True]
+[2024-02-01 19:40:18,894,INFO,data_validation,Data Validation Status: True]
+[2024-02-01 19:40:18,894,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-02-01 19:40:18,894,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-02-01 19:40:18,895,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-01 19:40:18,895,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-01 19:40:18,896,INFO,common,created directory at: artifacts]
+[2024-02-01 19:40:18,896,INFO,common,created directory at: artifacts/data_transformation]
+[2024-02-01 19:40:21,206,INFO,main,>>>>>> Stage Data Transformation Stage completed <<<<<<
+
+x==========]
+[2024-02-01 19:40:21,206,INFO,main,>>>>>> Stage Model Training Stage started <<<<<<]
+[2024-02-01 19:40:21,207,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-01 19:40:21,208,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-01 19:40:21,208,INFO,common,created directory at: artifacts]
+[2024-02-01 19:40:21,208,INFO,common,created directory at: artifacts/model_trainer]
+[2024-02-01 19:40:30,889,ERROR,main,No executable batch size found, reached zero.]
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 48, in <module>
+    model_trainer.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_04_model_trainer.py", line 19, in main
+    raise e
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_04_model_trainer.py", line 17, in main
+    model_trainer.train()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/model_trainer.py", line 51, in train
+    trainer.train()
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/trainer.py", line 1539, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/accelerate/utils/memory.py", line 134, in decorator
+    raise RuntimeError("No executable batch size found, reached zero.")
+RuntimeError: No executable batch size found, reached zero.
+[2024-02-01 19:41:05,087,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-01 19:41:05,661,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-02-01 19:41:05,662,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-01 19:41:05,663,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-01 19:41:05,663,INFO,common,created directory at: artifacts]
+[2024-02-01 19:41:05,663,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-02-01 19:41:05,663,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-02-01 19:41:05,854,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-02-01 19:41:05,854,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-02-01 19:41:05,855,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-01 19:41:05,855,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-01 19:41:05,855,INFO,common,created directory at: artifacts]
+[2024-02-01 19:41:05,855,INFO,common,created directory at: artifacts/data_validation]
+[2024-02-01 19:41:05,856,INFO,data_validation,Data Validation Status: True]
+[2024-02-01 19:41:05,856,INFO,data_validation,Data Validation Status: True]
+[2024-02-01 19:41:05,856,INFO,data_validation,Data Validation Status: True]
+[2024-02-01 19:41:05,856,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-02-01 19:41:05,856,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-02-01 19:41:05,857,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-01 19:41:05,857,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-01 19:41:05,857,INFO,common,created directory at: artifacts]
+[2024-02-01 19:41:05,857,INFO,common,created directory at: artifacts/data_transformation]
+[2024-02-01 19:41:06,782,INFO,main,>>>>>> Stage Data Transformation Stage completed <<<<<<
+
+x==========]
+[2024-02-01 19:41:06,782,INFO,main,>>>>>> Stage Model Training Stage started <<<<<<]
+[2024-02-01 19:41:06,784,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-01 19:41:06,784,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-01 19:41:06,784,INFO,common,created directory at: artifacts]
+[2024-02-01 19:41:06,784,INFO,common,created directory at: artifacts/model_trainer]
+[2024-02-01 19:41:15,674,ERROR,main,CUDA out of memory. Tried to allocate 376.00 MiB. GPU 0 has a total capacty of 3.82 GiB of which 335.69 MiB is free. Including non-PyTorch memory, this process has 3.42 GiB memory in use. Of the allocated memory 2.51 GiB is allocated by PyTorch, and 32.57 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF]
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 48, in <module>
+    model_trainer.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_04_model_trainer.py", line 19, in main
+    raise e
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_04_model_trainer.py", line 17, in main
+    model_trainer.train()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/model_trainer.py", line 52, in train
+    trainer.train()
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/trainer.py", line 1539, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/trainer.py", line 1869, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/trainer.py", line 2781, in training_step
+    self.accelerator.backward(loss)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/accelerate/accelerator.py", line 1964, in backward
+    loss.backward(**kwargs)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 376.00 MiB. GPU 0 has a total capacty of 3.82 GiB of which 335.69 MiB is free. Including non-PyTorch memory, this process has 3.42 GiB memory in use. Of the allocated memory 2.51 GiB is allocated by PyTorch, and 32.57 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+[2024-02-01 19:43:01,437,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-01 19:43:02,044,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-02-01 19:43:02,046,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-01 19:43:02,047,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-01 19:43:02,047,INFO,common,created directory at: artifacts]
+[2024-02-01 19:43:02,047,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-02-01 19:43:02,047,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-02-01 19:43:02,241,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-02-01 19:43:02,241,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-02-01 19:43:02,242,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-01 19:43:02,243,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-01 19:43:02,243,INFO,common,created directory at: artifacts]
+[2024-02-01 19:43:02,243,INFO,common,created directory at: artifacts/data_validation]
+[2024-02-01 19:43:02,243,INFO,data_validation,Data Validation Status: True]
+[2024-02-01 19:43:02,243,INFO,data_validation,Data Validation Status: True]
+[2024-02-01 19:43:02,243,INFO,data_validation,Data Validation Status: True]
+[2024-02-01 19:43:02,244,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-02-01 19:43:02,244,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-02-01 19:43:02,244,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-01 19:43:02,245,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-01 19:43:02,245,INFO,common,created directory at: artifacts]
+[2024-02-01 19:43:02,245,INFO,common,created directory at: artifacts/data_transformation]
+[2024-02-01 19:43:03,215,INFO,main,>>>>>> Stage Data Transformation Stage completed <<<<<<
+
+x==========]
+[2024-02-01 19:43:03,215,INFO,main,>>>>>> Stage Model Training Stage started <<<<<<]
+[2024-02-01 19:43:03,216,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-01 19:43:03,216,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-01 19:43:03,217,INFO,common,created directory at: artifacts]
+[2024-02-01 19:43:03,217,INFO,common,created directory at: artifacts/model_trainer]
+[2024-02-01 19:43:12,234,ERROR,main,CUDA out of memory. Tried to allocate 376.00 MiB. GPU 0 has a total capacty of 3.82 GiB of which 335.69 MiB is free. Including non-PyTorch memory, this process has 3.42 GiB memory in use. Of the allocated memory 2.51 GiB is allocated by PyTorch, and 32.57 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF]
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 48, in <module>
+    model_trainer.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_04_model_trainer.py", line 19, in main
+    raise e
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_04_model_trainer.py", line 17, in main
+    model_trainer.train()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/model_trainer.py", line 53, in train
+    trainer.train()
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/trainer.py", line 1539, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/trainer.py", line 1869, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/trainer.py", line 2781, in training_step
+    self.accelerator.backward(loss)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/accelerate/accelerator.py", line 1964, in backward
+    loss.backward(**kwargs)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 376.00 MiB. GPU 0 has a total capacty of 3.82 GiB of which 335.69 MiB is free. Including non-PyTorch memory, this process has 3.42 GiB memory in use. Of the allocated memory 2.51 GiB is allocated by PyTorch, and 32.57 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+[2024-02-01 19:43:47,665,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-01 19:43:48,507,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-02-01 19:43:48,508,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-01 19:43:48,509,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-01 19:43:48,509,INFO,common,created directory at: artifacts]
+[2024-02-01 19:43:48,509,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-02-01 19:43:48,509,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-02-01 19:43:50,108,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-02-01 19:43:50,108,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-02-01 19:43:50,109,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-01 19:43:50,109,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-01 19:43:50,109,INFO,common,created directory at: artifacts]
+[2024-02-01 19:43:50,109,INFO,common,created directory at: artifacts/data_validation]
+[2024-02-01 19:43:50,110,INFO,data_validation,Data Validation Status: True]
+[2024-02-01 19:43:50,110,INFO,data_validation,Data Validation Status: True]
+[2024-02-01 19:43:50,110,INFO,data_validation,Data Validation Status: True]
+[2024-02-01 19:43:50,110,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-02-01 19:43:50,110,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-02-01 19:43:50,111,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-01 19:43:50,111,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-01 19:43:50,112,INFO,common,created directory at: artifacts]
+[2024-02-01 19:43:50,112,INFO,common,created directory at: artifacts/data_transformation]
+[2024-02-01 19:43:50,835,INFO,main,>>>>>> Stage Data Transformation Stage completed <<<<<<
+
+x==========]
+[2024-02-01 19:43:50,835,INFO,main,>>>>>> Stage Model Training Stage started <<<<<<]
+[2024-02-01 19:43:50,836,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-01 19:43:50,837,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-01 19:43:50,837,INFO,common,created directory at: artifacts]
+[2024-02-01 19:43:50,837,INFO,common,created directory at: artifacts/model_trainer]
+[2024-02-01 19:43:59,499,ERROR,main,CUDA out of memory. Tried to allocate 376.00 MiB. GPU 0 has a total capacty of 3.82 GiB of which 335.69 MiB is free. Including non-PyTorch memory, this process has 3.42 GiB memory in use. Of the allocated memory 2.51 GiB is allocated by PyTorch, and 32.57 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF]
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 48, in <module>
+    model_trainer.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_04_model_trainer.py", line 19, in main
+    raise e
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_04_model_trainer.py", line 17, in main
+    model_trainer.train()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/model_trainer.py", line 53, in train
+    trainer.train()
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/trainer.py", line 1539, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/trainer.py", line 1869, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/trainer.py", line 2781, in training_step
+    self.accelerator.backward(loss)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/accelerate/accelerator.py", line 1964, in backward
+    loss.backward(**kwargs)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 376.00 MiB. GPU 0 has a total capacty of 3.82 GiB of which 335.69 MiB is free. Including non-PyTorch memory, this process has 3.42 GiB memory in use. Of the allocated memory 2.51 GiB is allocated by PyTorch, and 32.57 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+[2024-02-02 20:04:52,457,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-02 20:04:52,703,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-02 20:04:52,704,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-02 20:04:52,704,INFO,common,created directory at: artifacts]
+[2024-02-02 20:04:52,704,INFO,common,created directory at: artifacts/model_trainer]
+[2024-02-02 20:06:34,908,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-02 20:07:17,362,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-02 20:07:17,364,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-02 20:07:17,365,INFO,common,created directory at: artifacts]
+[2024-02-02 20:09:41,428,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-02 20:09:41,430,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-02 20:09:41,431,INFO,common,created directory at: artifacts]
+[2024-02-02 20:09:41,440,INFO,common,created directory at: artifacts/model_evaluation]
