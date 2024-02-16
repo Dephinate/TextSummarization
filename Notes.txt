@@ -8,4 +8,16 @@ Launch EC2 Machine
 Pull Imgae from ECR to EC2
 Launch Docker image in EC2
 
+Using CI/Cd, whenever any changes will be made to the code they will be automatically deployed
 
+For CI/CD
+1) write github actions yaml
+    3 jobs: integration, build and deployment of docker image to ECR container, pull and run the build image on an EC2 instance
+
+2) Add user with required policies in Image. We need EC2 full access and Container registry full access. Download your access keys for step 4
+
+3) Create ECR repo: 088052517375.dkr.ecr.us-east-1.amazonaws.com/text-s
+
+4) Setup EC2 instance with runner and docker etc
+
+5) Setup secrets to log into EC2 in github secrets to be accessed by github actions

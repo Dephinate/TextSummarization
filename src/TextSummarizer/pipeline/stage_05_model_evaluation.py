@@ -13,7 +13,8 @@ class ModelEvaluationPipeline:
             model_evaluation_config = config.get_model_evaluation_config()
 
             model_evaluator = ModelEvaluation(config=model_evaluation_config)
-            model_evaluator.evaluate(device="cpu")
+            # model_evaluator.evaluate(device="cpu")
+            model_evaluator.evaluate()
 
         except Exception as e:
             raise e
