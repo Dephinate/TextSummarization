@@ -1,5 +1,6 @@
 import pandas as pd
 import torch
+from tqdm import tqdm
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 from datasets import load_dataset, load_from_disk, load_metric
 from TextSummarizer.entity import ModelEvaluationConfig
@@ -31,8 +32,8 @@ class ModelEvaluation:
         # For each batch in the list of article_batches
 
         for article_batche, target_batche in tqdm(
-            zip(article_batches, target_batches,
-                total=len(article_batches))
+            zip(article_batches, target_batches),
+                total=len(article_batches)
 
         ):
 
@@ -65,16 +66,15 @@ class ModelEvaluation:
         rouge_names = ["rouge1", "rouge2", "rougeL", "rougeLsum"]
         rouge_metric = load_metric("rouge")
         score = self.calculate_metric_on_test_data(metric=rouge_metric,
-                                                   dataset=dataset,
-                                                   column_text="article",
-                                                   column_summary="highlights",
+                                                   dataset=dataset['test'][0:10],
+                                                   column_text="dialogue",
+                                                   column_summary="summary",
                                                    batch_size=2,
                                                    model=model_pegasus,
                                                    tokenizer=tokenizer,
-                                                   device="cuda" if torch.cuda.is_available() else "cpu"
+                                                   device=device
                                                    )
-        rouge_dict = dict(dict(rn, score[rn].mid.fmeasure)
-                          for rn in rouge_names)
+        rouge_dict = dict((rn, score[rn].mid.fmeasure) for rn in rouge_names)
 
-        df = pd.DataFrame(rouge_dict, index="pegasus")
+        df = pd.DataFrame(rouge_dict, index=['pegasus'])
         df.to_csv(self.config.metric_file_name, index=False)

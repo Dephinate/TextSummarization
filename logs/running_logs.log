@@ -1898,3 +1898,730 @@ torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 376.00 MiB. G
 [2024-02-02 20:09:41,430,INFO,common,yaml file params.yaml loaded successfully]
 [2024-02-02 20:09:41,431,INFO,common,created directory at: artifacts]
 [2024-02-02 20:09:41,440,INFO,common,created directory at: artifacts/model_evaluation]
+[2024-02-15 13:19:40,600,INFO,server,Started server process [24768]]
+[2024-02-15 13:19:40,601,INFO,on,Waiting for application startup.]
+[2024-02-15 13:19:40,601,INFO,on,Application startup complete.]
+[2024-02-15 13:19:40,601,INFO,server,Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2024-02-15 13:21:11,739,ERROR,h11_impl,Exception in ASGI application
+]
+Traceback (most recent call last):
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/uvicorn/protocols/http/h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/ASU/TextSummarization/app.py", line 46, in predict_route
+    raise e
+  File "/home/dephinate/ASU/TextSummarization/app.py", line 42, in predict_route
+    pred_pipe = PredictionPipeline()
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/prediction.py", line 8, in __init__
+    self.config = ConfigurationManager.get_model_evaluation_config()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ConfigurationManager.get_model_evaluation_config() missing 1 required positional argument: 'self'
+[2024-02-15 13:21:36,118,INFO,server,Shutting down]
+[2024-02-15 13:21:36,219,INFO,on,Waiting for application shutdown.]
+[2024-02-15 13:21:36,219,INFO,on,Application shutdown complete.]
+[2024-02-15 13:21:36,219,INFO,server,Finished server process [24768]]
+[2024-02-15 13:40:07,663,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-15 13:40:09,307,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-02-15 13:40:09,309,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 13:40:09,310,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 13:40:09,310,INFO,common,created directory at: artifacts]
+[2024-02-15 13:40:09,310,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-02-15 13:40:09,310,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-02-15 13:40:09,507,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-02-15 13:40:09,507,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-02-15 13:40:09,508,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 13:40:09,509,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 13:40:09,509,INFO,common,created directory at: artifacts]
+[2024-02-15 13:40:09,509,INFO,common,created directory at: artifacts/data_validation]
+[2024-02-15 13:40:09,509,INFO,data_validation,Data Validation Status: True]
+[2024-02-15 13:40:09,509,INFO,data_validation,Data Validation Status: True]
+[2024-02-15 13:40:09,509,INFO,data_validation,Data Validation Status: True]
+[2024-02-15 13:40:09,509,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-02-15 13:40:09,509,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-02-15 13:40:09,510,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 13:40:09,511,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 13:40:09,511,INFO,common,created directory at: artifacts]
+[2024-02-15 13:40:09,511,INFO,common,created directory at: artifacts/data_transformation]
+[2024-02-15 13:40:10,637,INFO,main,>>>>>> Stage Data Transformation Stage completed <<<<<<
+
+x==========]
+[2024-02-15 13:40:10,637,INFO,main,>>>>>> Stage Model Training Stage started <<<<<<]
+[2024-02-15 13:40:10,639,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 13:40:10,639,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 13:40:10,639,INFO,common,created directory at: artifacts]
+[2024-02-15 13:40:10,639,INFO,common,created directory at: artifacts/model_trainer]
+[2024-02-15 13:40:30,263,INFO,main,>>>>>> Stage Model Training Stage completed <<<<<<
+
+x==========]
+[2024-02-15 13:45:19,062,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-15 13:45:20,868,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-02-15 13:45:20,870,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 13:45:20,871,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 13:45:20,871,INFO,common,created directory at: artifacts]
+[2024-02-15 13:45:20,871,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-02-15 13:45:20,872,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-02-15 13:45:21,069,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-02-15 13:45:21,069,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-02-15 13:45:21,070,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 13:45:21,071,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 13:45:21,071,INFO,common,created directory at: artifacts]
+[2024-02-15 13:45:21,071,INFO,common,created directory at: artifacts/data_validation]
+[2024-02-15 13:45:21,071,INFO,data_validation,Data Validation Status: True]
+[2024-02-15 13:45:21,071,INFO,data_validation,Data Validation Status: True]
+[2024-02-15 13:45:21,072,INFO,data_validation,Data Validation Status: True]
+[2024-02-15 13:45:21,072,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-02-15 13:45:21,072,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-02-15 13:45:21,073,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 13:45:21,074,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 13:45:21,074,INFO,common,created directory at: artifacts]
+[2024-02-15 13:45:21,074,INFO,common,created directory at: artifacts/data_transformation]
+[2024-02-15 13:45:22,070,INFO,main,>>>>>> Stage Data Transformation Stage completed <<<<<<
+
+x==========]
+[2024-02-15 13:45:22,070,INFO,main,>>>>>> Stage Model Training Stage started <<<<<<]
+[2024-02-15 13:45:22,072,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 13:45:22,072,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 13:45:22,072,INFO,common,created directory at: artifacts]
+[2024-02-15 13:45:22,073,INFO,common,created directory at: artifacts/model_trainer]
+[2024-02-15 13:45:35,671,INFO,main,>>>>>> Stage Model Training Stage completed <<<<<<
+
+x==========]
+[2024-02-15 14:52:18,972,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-15 14:52:20,714,INFO,main,>>>>>> Stage Model Evaluation Stage started <<<<<<]
+[2024-02-15 14:52:20,714,ERROR,main,ModelEvaluationPipeline.main() takes 0 positional arguments but 1 was given]
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 60, in <module>
+    model_evaluater.main()
+TypeError: ModelEvaluationPipeline.main() takes 0 positional arguments but 1 was given
+[2024-02-15 14:55:01,140,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-15 14:55:02,685,INFO,main,>>>>>> Stage Model Evaluation Stage started <<<<<<]
+[2024-02-15 14:55:02,686,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 14:55:02,687,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 14:55:02,687,INFO,common,created directory at: artifacts]
+[2024-02-15 14:55:02,687,INFO,common,created directory at: artifacts/model_evaluation]
+[2024-02-15 14:55:10,285,ERROR,main,'article']
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 60, in <module>
+    model_evaluater.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_05_model_evaluation.py", line 16, in main
+    raise e
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_05_model_evaluation.py", line 14, in main
+    model_evaluator.evaluate()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/model_evaluation.py", line 67, in evaluate
+    score = self.calculate_metric_on_test_data(metric=rouge_metric,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/model_evaluation.py", line 27, in calculate_metric_on_test_data
+    dataset[column_text], batch_size))
+    ~~~~~~~^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/dataset_dict.py", line 74, in __getitem__
+    return super().__getitem__(k)
+           ^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'article'
+[2024-02-15 15:07:07,302,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-15 15:07:09,019,INFO,main,>>>>>> Stage Model Evaluation Stage started <<<<<<]
+[2024-02-15 15:07:09,020,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 15:07:09,021,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 15:07:09,021,INFO,common,created directory at: artifacts]
+[2024-02-15 15:07:09,021,INFO,common,created directory at: artifacts/model_evaluation]
+[2024-02-15 15:07:18,688,ERROR,main,CUDA out of memory. Tried to allocate 64.00 MiB. GPU 0 has a total capacty of 3.82 GiB of which 20.56 MiB is free. Including non-PyTorch memory, this process has 3.79 GiB memory in use. Of the allocated memory 2.89 GiB is allocated by PyTorch, and 20.21 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF]
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 60, in <module>
+    model_evaluater.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_05_model_evaluation.py", line 16, in main
+    raise e
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_05_model_evaluation.py", line 14, in main
+    model_evaluator.evaluate()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/model_evaluation.py", line 68, in evaluate
+    score = self.calculate_metric_on_test_ds(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/model_evaluation.py", line 34, in calculate_metric_on_test_ds
+    summaries = model.generate(input_ids=inputs["input_ids"].to(device),
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/generation/utils.py", line 1558, in generate
+    return self.beam_search(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/generation/utils.py", line 2942, in beam_search
+    outputs = self(
+              ^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/models/pegasus/modeling_pegasus.py", line 1358, in forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/models/pegasus/modeling_pegasus.py", line 1220, in forward
+    decoder_outputs = self.decoder(
+                      ^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/models/pegasus/modeling_pegasus.py", line 1052, in forward
+    layer_outputs = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/models/pegasus/modeling_pegasus.py", line 431, in forward
+    hidden_states, cross_attn_weights, cross_attn_present_key_value = self.encoder_attn(
+                                                                      ^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/models/pegasus/modeling_pegasus.py", line 182, in forward
+    key_states = self._shape(self.k_proj(key_value_states), -1, bsz)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/models/pegasus/modeling_pegasus.py", line 147, in _shape
+    return tensor.view(bsz, seq_len, self.num_heads, self.head_dim).transpose(1, 2).contiguous()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 64.00 MiB. GPU 0 has a total capacty of 3.82 GiB of which 20.56 MiB is free. Including non-PyTorch memory, this process has 3.79 GiB memory in use. Of the allocated memory 2.89 GiB is allocated by PyTorch, and 20.21 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+[2024-02-15 15:33:52,349,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-15 15:33:52,962,INFO,main,>>>>>> Stage Model Evaluation Stage started <<<<<<]
+[2024-02-15 15:33:52,964,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 15:33:52,965,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 15:33:52,965,INFO,common,created directory at: artifacts]
+[2024-02-15 15:33:52,965,INFO,common,created directory at: artifacts/model_evaluation]
+[2024-02-15 15:33:58,794,ERROR,main,"Column article not in the dataset. Current columns in the dataset: ['id', 'dialogue', 'summary', 'input_ids', 'attention_mask', 'labels']"]
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 60, in <module>
+    model_evaluater.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_05_model_evaluation.py", line 16, in main
+    raise e
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_05_model_evaluation.py", line 14, in main
+    model_evaluator.evaluate(device="cpu")
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/model_evaluation.py", line 68, in evaluate
+    score = self.calculate_metric_on_test_data(metric=rouge_metric,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/model_evaluation.py", line 28, in calculate_metric_on_test_data
+    dataset[column_text], batch_size))
+    ~~~~~~~^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 2800, in __getitem__
+    return self._getitem(key)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 2784, in _getitem
+    pa_subtable = query_table(self._data, key, indices=self._indices if self._indices is not None else None)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/formatting/formatting.py", line 580, in query_table
+    _check_valid_column_key(key, table.column_names)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/formatting/formatting.py", line 520, in _check_valid_column_key
+    raise KeyError(f"Column {key} not in the dataset. Current columns in the dataset: {columns}")
+KeyError: "Column article not in the dataset. Current columns in the dataset: ['id', 'dialogue', 'summary', 'input_ids', 'attention_mask', 'labels']"
+[2024-02-15 15:36:32,415,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-15 15:36:33,141,INFO,main,>>>>>> Stage Model Evaluation Stage started <<<<<<]
+[2024-02-15 15:36:33,142,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 15:36:33,143,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 15:36:33,143,INFO,common,created directory at: artifacts]
+[2024-02-15 15:36:33,143,INFO,common,created directory at: artifacts/model_evaluation]
+[2024-02-15 15:36:39,738,ERROR,main,'total' is an invalid keyword argument for zip()]
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 60, in <module>
+    model_evaluater.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_05_model_evaluation.py", line 16, in main
+    raise e
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_05_model_evaluation.py", line 14, in main
+    model_evaluator.evaluate(device="cpu")
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/model_evaluation.py", line 68, in evaluate
+    score = self.calculate_metric_on_test_data(metric=rouge_metric,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/model_evaluation.py", line 35, in calculate_metric_on_test_data
+    zip(article_batches, target_batches,
+TypeError: 'total' is an invalid keyword argument for zip()
+[2024-02-15 15:41:23,802,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-15 15:41:38,052,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-15 15:41:38,465,INFO,main,>>>>>> Stage Model Evaluation Stage started <<<<<<]
+[2024-02-15 15:41:38,467,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 15:41:38,467,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 15:41:38,467,INFO,common,created directory at: artifacts]
+[2024-02-15 15:41:38,468,INFO,common,created directory at: artifacts/model_evaluation]
+[2024-02-15 15:41:38,468,ERROR,main,ModelEvaluation.evaluate() got an unexpected keyword argument 'device']
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 60, in <module>
+    model_evaluater.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_05_model_evaluation.py", line 16, in main
+    raise e
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_05_model_evaluation.py", line 14, in main
+    model_evaluator.evaluate(device="cpu")
+TypeError: ModelEvaluation.evaluate() got an unexpected keyword argument 'device'
+[2024-02-15 15:42:11,282,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-15 15:42:11,700,INFO,main,>>>>>> Stage Model Evaluation Stage started <<<<<<]
+[2024-02-15 15:42:11,702,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 15:42:11,703,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 15:42:11,704,INFO,common,created directory at: artifacts]
+[2024-02-15 15:42:11,704,INFO,common,created directory at: artifacts/model_evaluation]
+[2024-02-15 15:44:32,646,INFO,rouge_scorer,Using default tokenizer.]
+[2024-02-15 15:44:32,904,INFO,main,>>>>>> Stage Model Evaluation Stage completed <<<<<<
+
+x==========]
+[2024-02-15 15:47:45,284,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-15 15:47:45,923,INFO,main,>>>>>> Stage Model Evaluation Stage started <<<<<<]
+[2024-02-15 15:47:45,925,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 15:47:45,926,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 15:47:45,926,INFO,common,created directory at: artifacts]
+[2024-02-15 15:47:45,926,INFO,common,created directory at: artifacts/model_evaluation]
+[2024-02-15 15:47:51,912,ERROR,main,'total' is an invalid keyword argument for zip()]
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 60, in <module>
+    model_evaluater.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_05_model_evaluation.py", line 22, in main
+    raise e
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_05_model_evaluation.py", line 20, in main
+    model_evaluator_copy.evaluate(device="cpu")
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/model_evaluation_copy.py", line 68, in evaluate
+    score = self.calculate_metric_on_test_data(metric=rouge_metric,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/model_evaluation_copy.py", line 35, in calculate_metric_on_test_data
+    zip(article_batches, target_batches,
+TypeError: 'total' is an invalid keyword argument for zip()
+[2024-02-15 15:49:24,781,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-15 15:49:25,335,INFO,main,>>>>>> Stage Model Evaluation Stage started <<<<<<]
+[2024-02-15 15:49:25,336,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 15:49:25,337,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 15:49:25,337,INFO,common,created directory at: artifacts]
+[2024-02-15 15:49:25,337,INFO,common,created directory at: artifacts/model_evaluation]
+[2024-02-15 18:54:33,209,INFO,rouge_scorer,Using default tokenizer.]
+[2024-02-15 18:54:34,509,ERROR,main,dict expected at most 1 argument, got 2]
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 60, in <module>
+    model_evaluater.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_05_model_evaluation.py", line 22, in main
+    raise e
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_05_model_evaluation.py", line 20, in main
+    model_evaluator_copy.evaluate(device="cpu")
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/model_evaluation_copy.py", line 77, in evaluate
+    rouge_dict = dict(dict(rn, score[rn].mid.fmeasure)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/model_evaluation_copy.py", line 77, in <genexpr>
+    rouge_dict = dict(dict(rn, score[rn].mid.fmeasure)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: dict expected at most 1 argument, got 2
+[2024-02-15 19:32:21,714,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-15 19:32:22,320,INFO,main,>>>>>> Stage Model Evaluation Stage started <<<<<<]
+[2024-02-15 19:32:22,322,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 19:32:22,323,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 19:32:22,323,INFO,common,created directory at: artifacts]
+[2024-02-15 19:32:22,323,INFO,common,created directory at: artifacts/model_evaluation]
+[2024-02-15 19:32:53,033,ERROR,main,Mismatch in the number of predictions (1) and references (2)]
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 60, in <module>
+    model_evaluater.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_05_model_evaluation.py", line 22, in main
+    raise e
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_05_model_evaluation.py", line 20, in main
+    model_evaluator_copy.evaluate(device="cpu")
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/model_evaluation_copy.py", line 68, in evaluate
+    score = self.calculate_metric_on_test_data(metric=rouge_metric,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/model_evaluation_copy.py", line 53, in calculate_metric_on_test_data
+    metric.add_batch(predictions=decoded_summaries,
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/datasets/metric.py", line 520, in add_batch
+    raise ValueError(error_msg) from None
+ValueError: Mismatch in the number of predictions (1) and references (2)
+[2024-02-15 19:35:10,066,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-15 19:35:10,622,INFO,main,>>>>>> Stage Model Evaluation Stage started <<<<<<]
+[2024-02-15 19:35:10,624,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 19:35:10,624,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 19:35:10,625,INFO,common,created directory at: artifacts]
+[2024-02-15 19:35:10,625,INFO,common,created directory at: artifacts/model_evaluation]
+[2024-02-15 19:37:29,513,INFO,rouge_scorer,Using default tokenizer.]
+[2024-02-15 19:37:29,757,INFO,main,>>>>>> Stage Model Evaluation Stage completed <<<<<<
+
+x==========]
+[2024-02-15 19:39:20,622,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-15 19:39:33,797,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-15 19:40:47,009,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-15 19:40:47,432,INFO,main,>>>>>> Stage Model Evaluation Stage started <<<<<<]
+[2024-02-15 19:40:47,434,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 19:40:47,435,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 19:40:47,435,INFO,common,created directory at: artifacts]
+[2024-02-15 19:40:47,435,INFO,common,created directory at: artifacts/model_evaluation]
+[2024-02-15 19:43:12,639,INFO,rouge_scorer,Using default tokenizer.]
+[2024-02-15 19:43:12,899,INFO,main,>>>>>> Stage Model Evaluation Stage completed <<<<<<
+
+x==========]
+[2024-02-15 20:08:26,196,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 20:08:26,198,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 20:08:26,199,INFO,common,created directory at: artifacts]
+[2024-02-15 20:08:26,199,INFO,common,created directory at: artifacts/model_evaluation]
+[2024-02-15 20:14:56,031,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 20:14:56,042,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 20:14:56,042,INFO,common,created directory at: artifacts]
+[2024-02-15 20:14:56,042,INFO,common,created directory at: artifacts/model_evaluation]
+[2024-02-15 20:26:39,919,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 20:26:39,920,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 20:26:39,921,INFO,common,created directory at: artifacts]
+[2024-02-15 20:26:39,921,INFO,common,created directory at: artifacts/model_evaluation]
+[2024-02-15 20:28:04,921,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 20:28:04,924,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 20:28:04,925,INFO,common,created directory at: artifacts]
+[2024-02-15 20:28:04,925,INFO,common,created directory at: artifacts/model_evaluation]
+[2024-02-15 20:29:08,869,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 20:29:08,871,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 20:29:08,872,INFO,common,created directory at: artifacts]
+[2024-02-15 20:29:08,872,INFO,common,created directory at: artifacts/model_evaluation]
+[2024-02-15 20:30:58,307,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 20:30:58,309,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 20:30:58,310,INFO,common,created directory at: artifacts]
+[2024-02-15 20:30:58,310,INFO,common,created directory at: artifacts/model_evaluation]
+[2024-02-15 20:32:12,511,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 20:32:12,514,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 20:32:12,514,INFO,common,created directory at: artifacts]
+[2024-02-15 20:32:12,515,INFO,common,created directory at: artifacts/model_evaluation]
+[2024-02-15 20:32:15,330,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 20:32:15,332,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 20:32:15,332,INFO,common,created directory at: artifacts]
+[2024-02-15 20:32:15,333,INFO,common,created directory at: artifacts/model_evaluation]
+[2024-02-15 20:34:08,582,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 20:34:08,584,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 20:34:08,584,INFO,common,created directory at: artifacts]
+[2024-02-15 20:34:08,584,INFO,common,created directory at: artifacts/model_evaluation]
+[2024-02-15 20:45:31,278,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 20:45:31,280,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 20:45:31,280,INFO,common,created directory at: artifacts]
+[2024-02-15 20:45:31,281,INFO,common,created directory at: artifacts/model_evaluation]
+[2024-02-15 20:49:07,729,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-15 20:49:08,346,INFO,main,>>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2024-02-15 20:49:08,348,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 20:49:08,349,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 20:49:08,349,INFO,common,created directory at: artifacts]
+[2024-02-15 20:49:08,349,INFO,common,created directory at: artifacts/data_ingestion]
+[2024-02-15 20:49:08,349,INFO,data_ingestion,File already exits of size: ~ 23073 KB]
+[2024-02-15 20:49:08,536,INFO,main,>>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========]
+[2024-02-15 20:49:08,536,INFO,main,>>>>>> Stage Data Validation Stage started <<<<<<]
+[2024-02-15 20:49:08,537,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 20:49:08,538,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 20:49:08,538,INFO,common,created directory at: artifacts]
+[2024-02-15 20:49:08,538,INFO,common,created directory at: artifacts/data_validation]
+[2024-02-15 20:49:08,538,INFO,data_validation,Data Validation Status: True]
+[2024-02-15 20:49:08,538,INFO,data_validation,Data Validation Status: True]
+[2024-02-15 20:49:08,539,INFO,data_validation,Data Validation Status: True]
+[2024-02-15 20:49:08,539,INFO,main,>>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========]
+[2024-02-15 20:49:08,539,INFO,main,>>>>>> Stage Data Transformation Stage started <<<<<<]
+[2024-02-15 20:49:08,540,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 20:49:08,540,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 20:49:08,540,INFO,common,created directory at: artifacts]
+[2024-02-15 20:49:08,540,INFO,common,created directory at: artifacts/data_transformation]
+[2024-02-15 20:49:09,719,INFO,main,>>>>>> Stage Data Transformation Stage completed <<<<<<
+
+x==========]
+[2024-02-15 20:49:09,720,INFO,main,>>>>>> Stage Model Training Stage started <<<<<<]
+[2024-02-15 20:49:09,721,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 20:49:09,722,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 20:49:09,722,INFO,common,created directory at: artifacts]
+[2024-02-15 20:49:09,722,INFO,common,created directory at: artifacts/model_trainer]
+[2024-02-15 20:49:22,962,ERROR,main,CUDA error: out of memory
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+]
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 49, in <module>
+    model_trainer.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_04_model_trainer.py", line 19, in main
+    raise e
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_04_model_trainer.py", line 17, in main
+    model_trainer.train()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/model_trainer.py", line 43, in train
+    trainer = Trainer(
+              ^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/trainer.py", line 459, in __init__
+    self._move_model_to_device(model, args.device)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/trainer.py", line 693, in _move_model_to_device
+    model = model.to(device)
+            ^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/modeling_utils.py", line 2595, in to
+    return super().to(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1160, in to
+    return self._apply(convert)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 833, in _apply
+    param_applied = fn(param)
+                    ^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1158, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: CUDA error: out of memory
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+[2024-02-15 20:49:55,929,INFO,server,Started server process [67854]]
+[2024-02-15 20:49:55,929,INFO,on,Waiting for application startup.]
+[2024-02-15 20:49:55,929,INFO,on,Application startup complete.]
+[2024-02-15 20:49:55,929,INFO,server,Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2024-02-15 20:50:36,061,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 20:50:36,063,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 20:50:36,063,INFO,common,created directory at: artifacts]
+[2024-02-15 20:50:36,063,INFO,common,created directory at: artifacts/model_evaluation]
+[2024-02-15 20:50:42,323,ERROR,h11_impl,Exception in ASGI application
+]
+Traceback (most recent call last):
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/uvicorn/protocols/http/h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/ASU/TextSummarization/app.py", line 46, in predict_route
+    raise e
+  File "/home/dephinate/ASU/TextSummarization/app.py", line 43, in predict_route
+    pred = pred_pipe.predict(text=text)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/prediction.py", line 16, in predict
+    pipe = pipeline("summarization", model=self.config.model_path,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/pipelines/__init__.py", line 1070, in pipeline
+    return pipeline_class(model=model, framework=framework, task=task, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/pipelines/text2text_generation.py", line 67, in __init__
+    super().__init__(*args, **kwargs)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/pipelines/base.py", line 840, in __init__
+    self.model.to(self.device)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/modeling_utils.py", line 2595, in to
+    return super().to(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1160, in to
+    return self._apply(convert)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 833, in _apply
+    param_applied = fn(param)
+                    ^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1158, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: CUDA error: out of memory
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+[2024-02-15 21:09:11,590,INFO,server,Shutting down]
+[2024-02-15 21:09:11,691,INFO,on,Waiting for application shutdown.]
+[2024-02-15 21:09:11,691,INFO,on,Application shutdown complete.]
+[2024-02-15 21:09:11,691,INFO,server,Finished server process [67854]]
+[2024-02-15 21:09:18,349,INFO,server,Started server process [69629]]
+[2024-02-15 21:09:18,349,INFO,on,Waiting for application startup.]
+[2024-02-15 21:09:18,349,INFO,on,Application startup complete.]
+[2024-02-15 21:09:18,349,INFO,server,Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2024-02-15 21:09:23,180,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 21:09:23,181,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 21:09:23,181,INFO,common,created directory at: artifacts]
+[2024-02-15 21:09:23,181,INFO,common,created directory at: artifacts/model_evaluation]
+[2024-02-16 02:27:58,739,INFO,server,Shutting down]
+[2024-02-16 02:27:58,848,INFO,on,Waiting for application shutdown.]
+[2024-02-16 02:27:58,848,INFO,on,Application shutdown complete.]
+[2024-02-16 02:27:58,848,INFO,server,Finished server process [69629]]
+[2024-02-16 02:29:36,020,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-16 02:29:36,624,INFO,main,>>>>>> Stage Model Training Stage started <<<<<<]
+[2024-02-16 02:29:36,626,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-16 02:29:36,627,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-16 02:29:36,627,INFO,common,created directory at: artifacts]
+[2024-02-16 02:29:36,627,INFO,common,created directory at: artifacts/model_trainer]
+[2024-02-16 02:29:48,008,ERROR,main,CUDA error: out of memory
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+]
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 49, in <module>
+    model_trainer.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_04_model_trainer.py", line 19, in main
+    raise e
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_04_model_trainer.py", line 17, in main
+    model_trainer.train()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/model_trainer.py", line 43, in train
+    trainer = Trainer(
+              ^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/trainer.py", line 459, in __init__
+    self._move_model_to_device(model, args.device)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/trainer.py", line 693, in _move_model_to_device
+    model = model.to(device)
+            ^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/modeling_utils.py", line 2595, in to
+    return super().to(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1160, in to
+    return self._apply(convert)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 833, in _apply
+    param_applied = fn(param)
+                    ^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1158, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: CUDA error: out of memory
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+[2024-02-16 02:38:22,862,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-16 02:38:36,061,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-16 02:38:36,487,INFO,main,>>>>>> Stage Model Training Stage started <<<<<<]
+[2024-02-16 02:38:36,489,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-16 02:38:36,489,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-16 02:38:36,490,INFO,common,created directory at: artifacts]
+[2024-02-16 02:38:36,490,INFO,common,created directory at: artifacts/model_trainer]
+[2024-02-16 02:38:48,485,ERROR,main,CUDA error: out of memory
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+]
+Traceback (most recent call last):
+  File "/home/dephinate/ASU/TextSummarization/main.py", line 49, in <module>
+    model_trainer.main()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_04_model_trainer.py", line 19, in main
+    raise e
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/pipeline/stage_04_model_trainer.py", line 17, in main
+    model_trainer.train()
+  File "/home/dephinate/ASU/TextSummarization/src/TextSummarizer/components/model_trainer.py", line 41, in train
+    trainer = Trainer(model=model_pegasus, args=trainer_args,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/trainer.py", line 459, in __init__
+    self._move_model_to_device(model, args.device)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/trainer.py", line 693, in _move_model_to_device
+    model = model.to(device)
+            ^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/transformers/modeling_utils.py", line 2595, in to
+    return super().to(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1160, in to
+    return self._apply(convert)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 833, in _apply
+    param_applied = fn(param)
+                    ^^^^^^^^^
+  File "/home/dephinate/miniconda3/envs/texts/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1158, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: CUDA error: out of memory
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+[2024-02-16 02:41:19,001,INFO,config,PyTorch version 2.1.2 available.]
+[2024-02-16 02:41:19,579,INFO,main,>>>>>> Stage Model Training Stage started <<<<<<]
+[2024-02-16 02:41:19,581,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-16 02:41:19,582,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-16 02:41:19,582,INFO,common,created directory at: artifacts]
+[2024-02-16 02:41:19,582,INFO,common,created directory at: artifacts/model_trainer]
+[2024-02-16 02:46:55,673,INFO,server,Started server process [85077]]
+[2024-02-16 02:46:55,674,INFO,on,Waiting for application startup.]
+[2024-02-16 02:46:55,674,INFO,on,Application startup complete.]
+[2024-02-16 02:46:55,674,INFO,server,Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2024-02-16 02:47:20,043,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-16 02:47:20,045,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-16 02:47:20,045,INFO,common,created directory at: artifacts]
+[2024-02-16 02:47:20,045,INFO,common,created directory at: artifacts/model_evaluation]
+[2024-02-16 02:49:16,996,INFO,server,Shutting down]
+[2024-02-16 02:49:17,104,INFO,on,Waiting for application shutdown.]
+[2024-02-16 02:49:17,104,INFO,on,Application shutdown complete.]
+[2024-02-16 02:49:17,104,INFO,server,Finished server process [85077]]

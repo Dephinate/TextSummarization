@@ -1,0 +1,11 @@
+1) Unpacking Dictionaries in Python
+gen_kwargs = {"length_penalty": 0.8, "num_beams":8, "max_length": 128}
+output = pipe(text, **gen_kwargs)[0]["summary_text"] is eqal to output = pipe(text, )[0]["summary_text"]
+
+Build Docker Image of the Source Code
+Push Docker Image to ECR
+Launch EC2 Machine
+Pull Imgae from ECR to EC2
+Launch Docker image in EC2
+
+

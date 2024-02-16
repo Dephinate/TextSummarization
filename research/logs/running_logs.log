@@ -41,3 +41,7 @@ connection: close
 [2024-02-01 17:38:06,876,INFO,common,yaml file params.yaml loaded successfully]
 [2024-02-01 17:38:06,877,INFO,common,created directory at: artifacts]
 [2024-02-01 17:38:06,879,INFO,common,created directory at: artifacts/model_trainer]
+[2024-02-15 20:05:22,807,INFO,common,yaml file config/config.yaml loaded successfully]
+[2024-02-15 20:05:22,823,INFO,common,yaml file params.yaml loaded successfully]
+[2024-02-15 20:05:22,824,INFO,common,created directory at: artifacts]
+[2024-02-15 20:05:22,825,INFO,common,created directory at: artifacts/model_evaluation]
